@@ -1,565 +1,210 @@
-/* ========================================
-   VARIABLES CSS - MODIFIABLES FACILEMENT
-   ======================================== */
-:root {
-    /* Couleurs principales (noir et blanc) */
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-gray-dark: #1a1a1a;
-    --color-gray-medium: #333333;
-    --color-gray-light: #666666;
-    --color-gray-lighter: #999999;
-    
-    /* Couleurs d'accent pour les effets Venom */
-    --color-troll: #ff0066;      /* Rose/Rouge pour le produit troll */
-    --color-main: #00ff88;       /* Vert pour le produit principal */
-    --color-starter: #0088ff;    /* Bleu pour le produit starter */
-    
-    /* Typographie */
-    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-size-base: 18px;
-    --font-size-small: 16px;
-    --font-size-large: 24px;
-    --font-size-xl: 32px;
-    --font-size-xxl: 48px;
-    --font-size-hero: 64px;
-    
-    /* Espacements */
-    --spacing-xs: 8px;
-    --spacing-sm: 16px;
-    --spacing-md: 24px;
-    --spacing-lg: 32px;
-    --spacing-xl: 48px;
-    --spacing-xxl: 64px;
-    --spacing-hero: 120px;
-    
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition-medium: 0.4s ease;
-    --transition-slow: 0.6s ease;
-}
-
-/* ========================================
-   RESET ET BASE
-   ======================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    line-height: 1.6;
-    color: var(--color-white);
-    background-color: var(--color-black);
-    overflow-x: hidden;
-}
-
-/* ========================================
-   UTILITAIRES
-   ======================================== */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
-}
-
-.section-title {
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-    letter-spacing: -0.02em;
-}
-
-.highlight {
-    position: relative;
-    font-weight: 500;
-}
-
-.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-white), transparent);
-    opacity: 0.3;
-}
-
-/* ========================================
-   SECTION HERO
-   ======================================== */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    background: radial-gradient(ellipse at center, var(--color-gray-dark) 0%, var(--color-black) 70%);
-}
-
-.hero-title {
-    font-size: var(--font-size-hero);
-    font-weight: 700;
-    margin-bottom: var(--spacing-md);
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-    animation: fadeInUp 1s ease-out;
-}
-
-.hero-subtitle {
-    font-size: var(--font-size-large);
-    font-weight: 300;
-    color: var(--color-gray-lighter);
-    margin-bottom: var(--spacing-xxl);
-    animation: fadeInUp 1s ease-out 0.3s both;
-}
-
-.scroll-indicator {
-    position: absolute;
-    bottom: var(--spacing-lg);
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: var(--font-size-large);
-    animation: bounce 2s infinite;
-    opacity: 0.7;
-}
-
-/* ========================================
-   SECTIONS GÉNÉRALES
-   ======================================== */
-.intro, .problem, .solution, .testimonials, .offers, .final-cta {
-    padding: var(--spacing-hero) 0;
-}
-
-.intro {
-    background: linear-gradient(180deg, var(--color-black) 0%, var(--color-gray-dark) 50%, var(--color-black) 100%);
-}
-
-.intro-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.intro-text {
-    font-size: var(--font-size-large);
-    font-weight: 300;
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.7;
-}
-
-/* ========================================
-   SECTION PROBLÈME
-   ======================================== */
-.problem {
-    background-color: var(--color-gray-dark);
-}
-
-.problem-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.problem-text {
-    font-size: var(--font-size-base);
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.8;
-}
-
-/* ========================================
-   SECTION SOLUTION
-   ======================================== */
-.solution {
-    background: var(--color-black);
-}
-
-.solution-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.solution-text {
-    font-size: var(--font-size-base);
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.8;
-}
-
-/* ========================================
-   SECTION TÉMOIGNAGES
-   ======================================== */
-.testimonials {
-    background: linear-gradient(135deg, var(--color-gray-dark) 0%, var(--color-black) 100%);
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
-}
-
-.testimonial {
-    padding: var(--spacing-lg);
-    border: 1px solid var(--color-gray-medium);
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(10px);
-    transition: var(--transition-medium);
-}
-
-.testimonial:hover {
-    border-color: var(--color-gray-light);
-    transform: translateY(-4px);
-}
-
-.testimonial-text {
-    font-size: var(--font-size-base);
-    font-style: italic;
-    margin-bottom: var(--spacing-md);
-    line-height: 1.7;
-}
-
-.testimonial-author {
-    font-size: var(--font-size-small);
-    color: var(--color-gray-lighter);
-    font-weight: 500;
-}
-
-/* ========================================
-   SECTION OFFRES / PRODUITS
-   ======================================== */
-.offers {
-    background: var(--color-black);
-    padding: var(--spacing-hero) 0;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
-}
-
-.product {
-    border: 2px solid var(--color-gray-medium);
-    background: var(--color-gray-dark);
-    padding: var(--spacing-lg);
-    position: relative;
-    transition: var(--transition-medium);
-    overflow: hidden;
-}
-
-.product::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, transparent 0%, transparent 70%, rgba(255, 255, 255, 0.1) 100%);
-    opacity: 0;
-    transition: var(--transition-slow);
-    pointer-events: none;
-}
-
-/* Badges pour le produit principal */
-.product-badge {
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    font-size: var(--font-size-small);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.product-main {
-    border-color: var(--color-gray-light);
-    transform: scale(1.05);
-}
-
-.product-header {
-    margin-bottom: var(--spacing-lg);
-}
-
-.product-title {
-    font-size: var(--font-size-large);
-    font-weight: 600;
-    margin-bottom: var(--spacing-sm);
-    line-height: 1.3;
-}
-
-.product-price {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-white);
-}
-
-.product-content {
-    margin-bottom: var(--spacing-lg);
-}
-
-.product-description {
-    font-size: var(--font-size-base);
-    line-height: 1.6;
-    color: var(--color-gray-lighter);
-}
-
-.product-footer {
-    margin-top: auto;
-}
-
-/* ========================================
-   BOUTONS AVEC EFFET VENOM
-   ======================================== */
-.btn {
-    display: inline-block;
-    width: 100%;
-    padding: var(--spacing-md) var(--spacing-lg);
-    font-size: var(--font-size-base);
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid var(--color-white);
-    background: transparent;
-    color: var(--color-white);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition-medium);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    transition: var(--transition-slow);
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-/* Effet Venom au survol - Produit Troll */
-.product-troll:hover::before {
-    opacity: 1;
-    background: radial-gradient(circle, var(--color-troll) 0%, transparent 70%);
-}
-
-.btn-troll {
-    border-color: var(--color-white);
-}
-
-.btn-troll:hover {
-    border-color: var(--color-troll);
-    color: var(--color-white);
-    box-shadow: 0 0 30px rgba(255, 0, 102, 0.3);
-}
-
-.btn-troll::before {
-    background: var(--color-troll);
-}
-
-.btn-troll:hover::before {
-    width: 300px;
-    height: 300px;
-}
-
-/* Effet Venom au survol - Produit Principal */
-.product-main:hover::before {
-    opacity: 1;
-    background: radial-gradient(circle, var(--color-main) 0%, transparent 70%);
-}
-
-.btn-main {
-    border-color: var(--color-white);
-}
-
-.btn-main:hover {
-    border-color: var(--color-main);
-    color: var(--color-black);
-    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
-}
-
-.btn-main::before {
-    background: var(--color-main);
-}
-
-.btn-main:hover::before {
-    width: 300px;
-    height: 300px;
-}
-
-/* Effet Venom au survol - Produit Starter */
-.product-starter:hover::before {
-    opacity: 1;
-    background: radial-gradient(circle, var(--color-starter) 0%, transparent 70%);
-}
-
-.btn-starter {
-    border-color: var(--color-white);
-}
-
-.btn-starter:hover {
-    border-color: var(--color-starter);
-    color: var(--color-white);
-    box-shadow: 0 0 30px rgba(0, 136, 255, 0.3);
-}
-
-.btn-starter::before {
-    background: var(--color-starter);
-}
-
-.btn-starter:hover::before {
-    width: 300px;
-    height: 300px;
-}
-
-/* ========================================
-   SECTION CALL-TO-ACTION FINAL
-   ======================================== */
-.final-cta {
-    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-dark) 100%);
-    text-align: center;
-}
-
-.cta-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.cta-title {
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.3;
-}
-
-.cta-variants {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-
-.cta-variant {
-    font-size: var(--font-size-large);
-    font-weight: 300;
-    color: var(--color-gray-lighter);
-    opacity: 0.8;
-    transition: var(--transition-medium);
-}
-
-.cta-variant:hover {
-    opacity: 1;
-    color: var(--color-white);
-}
-
-/* ========================================
-   FOOTER
-   ======================================== */
-.footer {
-    background: var(--color-black);
-    padding: var(--spacing-xl) 0;
-    text-align: center;
-    border-top: 1px solid var(--color-gray-medium);
-}
-
-.footer-text {
-    font-size: var(--font-size-small);
-    color: var(--color-gray-lighter);
-    font-weight: 300;
-}
-
-/* ========================================
-   ANIMATIONS
-   ======================================== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    40% {
-        transform: translateX(-50%) translateY(-10px);
-    }
-    60% {
-        transform: translateX(-50%) translateY(-5px);
-    }
-}
-
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
-@media (max-width: 768px) {
-    :root {
-        --font-size-hero: 40px;
-        --font-size-xxl: 32px;
-        --font-size-xl: 24px;
-        --font-size-large: 20px;
-        --font-size-base: 16px;
-        --spacing-hero: 80px;
-    }
-    
-    .container {
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .products-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
-    }
-    
-    .product-main {
-        transform: none;
-    }
-    
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
-    }
-    
-    .cta-variants {
-        gap: var(--spacing-sm);
-    }
-}
-
-@media (max-width: 480px) {
-    :root {
-        --font-size-hero: 32px;
-        --spacing-hero: 60px;
-    }
-    
-    .hero-title {
-        line-height: 1.2;
-    }
-    
-    .product {
-        padding: var(--spacing-md);
-    }
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu n'aurais jamais dû scanner ça</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SECTION HERO / ACCROCHE PRINCIPALE -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Tu n'aurais jamais dû scanner ça.</h1>
+            <p class="hero-subtitle">Ce n'est pas un hasard si tu es ici. Le hasard n'existe pas.</p>
+            <div class="scroll-indicator">
+                <span>↓</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION INTRODUCTION MYSTÉRIEUSE -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <p class="intro-text">
+                    Chaque clic, chaque scroll, chaque décision t'a mené précisément à cet instant. 
+                    Tu cherchais quelque chose, n'est-ce pas ? Une réponse. Une sortie. 
+                    Une étincelle dans le gris de tes journées.
+                </p>
+                <p class="intro-text">
+                    Continue de lire. Tu es plus proche que tu ne le penses.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROBLÈME -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">Le Problème</h2>
+            <div class="problem-content">
+                <p class="problem-text">
+                    Regarde autour de toi. Écoute les conversations. Les gens se plaignent. 
+                    Du temps, de leur travail, de leur vie. Ils sont englués dans une routine 
+                    confortable mais sans saveur.
+                </p>
+                <p class="problem-text">
+                    Ils attendent le week-end, les vacances, la retraite... en espérant que 
+                    le bonheur, le vrai, se trouve là-bas, plus tard. Mais "plus tard" est un piège. 
+                    Une excuse pour ne pas vivre maintenant.
+                </p>
+                <p class="problem-text highlight">
+                    Et au fond de toi, tu le sais. Cette petite voix qui te dit que tu vaux mieux que ça, 
+                    que tu mérites plus qu'une simple attente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SOLUTION -->
+    <section class="solution">
+        <div class="container">
+            <h2 class="section-title">Le Déclic</h2>
+            <div class="solution-content">
+                <p class="solution-text">
+                    Le changement n'est pas un événement spectaculaire. Ce n'est pas un coup de tonnerre. 
+                    C'est un déclic. Une décision silencieuse mais puissante.
+                </p>
+                <p class="solution-text">
+                    La décision de ne plus subir. De ne plus attendre. De reprendre le contrôle. 
+                    C'est comprendre que la seule personne qui peut changer ta vie, c'est toi.
+                </p>
+                <p class="solution-text highlight">
+                    Et tout commence par un simple choix, un premier pas dans une nouvelle direction.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PREUVE SOCIALE -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ils ont fait le choix</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "J'ai hésité. Puis j'ai compris que l'hésitation était le problème. 
+                        C'était le premier mur à abattre."
+                    </p>
+                    <span class="testimonial-author">— Alex</span>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "On passe sa vie à chercher des réponses à l'extérieur, alors qu'elles 
+                        sont juste là, en nous. Ce truc m'a juste donné la clé pour ouvrir la porte."
+                    </p>
+                    <span class="testimonial-author">— M.</span>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Le plus effrayant, ce n'est pas le changement. C'est de regarder en arrière 
+                        et de voir que rien n'a changé."
+                    </p>
+                    <span class="testimonial-author">— Clara</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION OFFRES / PRODUITS -->
+    <section class="offers">
+        <div class="container">
+            <h2 class="section-title">Fais ton choix</h2>
+            <div class="products-grid">
+                
+                <!-- PRODUIT 1 - TROLL -->
+                <div class="product product-troll">
+                    <div class="product-header">
+                        <h3 class="product-title">Le Révélateur Ultime</h3>
+                        <div class="product-price">200€</div>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            Si tu achètes ça, tu es vraiment con (et voici pourquoi).
+                        </p>
+                    </div>
+                    <div class="product-footer">
+                        <!-- MODIFIER CE LIEN GUMROAD -->
+                        <a href="https://gumroad.com/l/placeholder1" class="btn btn-troll" target="_blank">
+                            Je suis prêt à savoir pourquoi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 2 - INTERMÉDIAIRE -->
+                <div class="product product-main">
+                    <div class="product-badge">Le plus logique</div>
+                    <div class="product-header">
+                        <h3 class="product-title">Le Déclic : L'Expérience Complète</h3>
+                        <div class="product-price">70€</div>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            L'ebook pour comprendre, et l'audio bonus pour intégrer le changement 
+                            au plus profond de toi. La méthode complète pour ne laisser aucune place au doute.
+                        </p>
+                    </div>
+                    <div class="product-footer">
+                        <!-- MODIFIER CE LIEN GUMROAD -->
+                        <a href="https://gumroad.com/l/placeholder2" class="btn btn-main" target="_blank">
+                            Choisir la logique
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PRODUIT 3 - ACCESSIBLE -->
+                <div class="product product-starter">
+                    <div class="product-header">
+                        <h3 class="product-title">Le Premier Pas</h3>
+                        <div class="product-price">27€</div>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            Le premier pas est le plus important. Cet ebook est la première pierre 
+                            de ton nouvel édifice. Simple, direct, sans fioritures. L'essentiel pour 
+                            enclencher le mécanisme.
+                        </p>
+                    </div>
+                    <div class="product-footer">
+                        <!-- MODIFIER CE LIEN GUMROAD -->
+                        <a href="https://gumroad.com/l/placeholder3" class="btn btn-starter" target="_blank">
+                            Faire le premier pas
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CALL-TO-ACTION FINAL -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Je te promets que tu es en train de changer.</h2>
+                <div class="cta-variants">
+                    <p class="cta-variant">Le processus a déjà commencé.</p>
+                    <p class="cta-variant">Tu ne regarderas plus jamais en arrière.</p>
+                    <p class="cta-variant">Bienvenue dans le reste de ta vie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Tu n'aurais jamais dû scanner ça. Mais maintenant, c'est trop tard.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
