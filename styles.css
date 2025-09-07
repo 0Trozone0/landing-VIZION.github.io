@@ -84,3 +84,25 @@
 .btn-tertiary:hover {
   background: var(--color-troll-dark);
 }
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .product-card {
+    padding: var(--spacing-md);
+  }
+
+  .product-title {
+    font-size: var(--font-size-base);
+  }
+
+  .product-price {
+    font-size: var(--font-size-large);
+  }
+
+  .product-description {
+    font-size: var(--font-size-small);
+  }
+}
