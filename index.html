@@ -1,756 +1,1251 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>VIZION - Ideas that transform perspectives</title>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@400;500;700&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-    :root {
-      --off-white: #FAF8F5;
-      --beige: #EAE6E1;
-      --olive-green: #5C6B53;
-      --deep-black: #1A1A1A;
-      --gold-accent: #BFA181;
+< !DOCTYPE html >
+    <
+    html lang = "en" > < head >
+    <
+    meta charset = "utf-8" / >
+    <
+    meta content = "width=device-width, initial-scale=1.0"
+name = "viewport" / >
+    <
+    title > VIZION - Ideas that transform perspectives < /title> <
+link crossorigin = ""
+href = "https://fonts.gstatic.com/"
+rel = "preconnect" / >
+    <
+    link as = "style"
+href = "https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@400;500;700&amp;display=swap"
+onload = "this.rel='stylesheet'"
+rel = "stylesheet" / >
+    <
+    script src = "https://cdn.tailwindcss.com?plugins=forms,container-queries" > < /script> <
+style type = "text/tailwindcss" >
+    : root {
+        --off - white: #FAF8F5;
+        --beige: #EAE6E1;
+        --olive - green: #5C6B53;
+      --deep-black: # 1 A1A1A;
+        --gold - accent: #BFA181;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--off-white);
+body {
+    font - family: 'Inter', sans - serif;
+    background - color: var (--off - white);
+}
+h1, h2, h3, h4, h5, h6, .font - serif {
+        font - family: 'Newsreader', serif;
     }
-    h1, h2, h3, h4, h5, h6, .font-serif {
-      font-family: 'Newsreader', serif;
-    }
-    .sticky-nav {
-      transition: all 0.3s ease-in-out;
-    }
-  </style>
-</head>
-<body class="text-[var(--deep-black)]">
-<div class="relative flex size-full min-h-screen flex-col bg-[var(--off-white)] group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap bg-[var(--off-white)]/80 backdrop-blur-sm px-12 py-6 transition-all duration-300 ease-in-out" id="navbar">
-<a class="flex items-center gap-3 text-[var(--deep-black)]" href="#">
-<span class="font-serif text-2xl font-medium tracking-tighter">VIZION</span>
-</a>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors" href="#">Home</a>
-<a class="text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors" href="#">Boutique</a>
-<a class="text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors" href="#">About</a>
-<a class="text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors" href="#">Blog</a>
-<a class="text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors" href="#">Contact</a>
-</nav>
-<button class="hidden md:flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-[var(--deep-black)] hover:bg-[var(--beige)] transition-colors">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-</svg>
-</button>
-<button class="md:hidden flex items-center justify-center h-10 w-10 text-[var(--deep-black)]">
-<svg fill="none" height="24px" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</button>
-</header>
-<main class="flex-1">
-<section class="py-24 sm:py-32 md:py-40 text-center">
-<div class="container mx-auto px-6 lg:px-8">
-<h1 class="text-5xl sm:text-6xl md:text-7xl font-light tracking-tighter text-[var(--deep-black)]">VIZION</h1>
-<p class="mt-4 text-lg sm:text-xl md:text-2xl font-serif italic text-gray-700">Ideas that transform perspectives.</p>
-<div class="mt-12 max-w-2xl mx-auto">
-<p class="text-base leading-relaxed text-gray-600">
-                At VIZION, we believe in the power of words to reshape our understanding of the world. We curate a collection of ebooks that challenge conventional thinking, spark curiosity, and inspire personal growth. Dive into new realms of knowledge and see the world through a different lens.
-              </p>
-</div>
-</div>
-</section>
-<section class="py-24 bg-[var(--beige)]">
-<div class="container mx-auto px-6 lg:px-8">
-<h2 class="text-4xl font-serif font-light text-center mb-16 text-[var(--deep-black)]">Featured Ebooks</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-<div class="group flex flex-col items-center text-center">
-<div class="relative w-full mb-6">
-<div class="aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden">
-<img alt="Ebook cover for The Art of Mindful Living" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtXJVmjCFSCwSz2R9UH0Ga61d2LgV5CDrPKhEj6fybmaEDStP8yKjGDZ1GPuR1UnGsZ0FlGPfkbsTHwiWmJ3WIkC6M2vAf_Vz8ccJ-6U86wj2K9ORsSipIlkW9nZnp3NEKUZrbW_e3ZMBIDqZ2ZNbFUYjP0yCF3RDSwzb9N8ZdqgYK3eTS7ihb-6ipZwghWZ_B0ha9ZjuaRGLX0TQrRqAA8YZMzs1rizsogAbAiaHKBG97e7zkFx9WDLtyroPiUTmNlBeAJKylErw"/>
-</div>
-</div>
-<h3 class="text-2xl font-serif text-[var(--deep-black)]">The Art of Mindful Living</h3>
-<p class="mt-2 text-base text-gray-600 px-4">Explore the principles of mindfulness and discover how to cultivate a more peaceful and present life.</p>
-<a class="mt-4 inline-block text-base font-semibold text-[var(--gold-accent)] hover:text-[var(--deep-black)] transition-colors" href="#">Discover
-                            <span aria-hidden="true" class="ml-1">→</span>
-</a>
-</div>
-<div class="group flex flex-col items-center text-center">
-<div class="relative w-full mb-6">
-<div class="aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden">
-<img alt="Ebook cover for The Power of Habit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFxPXS9TUQwixKCy3_jf0WJah8kTA0kmd2-Xzb5fhrLVuk_Jo36okXbkseJO0XuaaMMGhBfdUZ0J4kUqeWBhu8ItZ_giVMTXSlWfi0WwoHh4ABfBNS8XstlDxljB1M6ajxPoffA8jzGrcW2VFrNhAPTQtOxDQ5u4I9jMljIl6CuTJZ7LCGIYB7HcIxo7FTIiYewTYj0e2gzmia7MAjYokntt2I8KgiEnsZsUvjX5j6h-tAIMKrM2uMto39GieEamLPqx4i2TkPSA8"/>
-</div>
-</div>
-<h3 class="text-2xl font-serif text-[var(--deep-black)]">The Power of Habit</h3>
-<p class="mt-2 text-base text-gray-600 px-4">Learn how to build good habits and break bad ones to achieve your goals and transform your life.</p>
-<a class="mt-4 inline-block text-base font-semibold text-[var(--gold-accent)] hover:text-[var(--deep-black)] transition-colors" href="#">Discover
-                            <span aria-hidden="true" class="ml-1">→</span>
-</a>
-</div>
-<div class="group flex flex-col items-center text-center">
-<div class="relative w-full mb-6">
-<div class="aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden">
-<img alt="Ebook cover for The Future of Innovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCofps72FK4GNENR2pKieodtkV2c4-iW5CM71Ps0XV-JgPztZJ8-B_3aOdjkClEp_OePxuHaBUb0WVQbZLQAuP2NP4fkSMFtgNbBs-kXwz55ffMS1Zt2Imr-wjpvXFBYpEC8D47stPHLsMvOQolLGtg8cRhCRDhNMqS0b58JF3xZLxSBTKrxyWjeBrn8CyuVgLlkSkVBedRQaFHhaMjIvTZr7wVv3pO4u6gTZ5I03P6Fb_cA9nTrThWS1VsM768shFmZiU51YABTfY"/>
-</div>
-</div>
-<h3 class="text-2xl font-serif text-[var(--deep-black)]">The Future of Innovation</h3>
-<p class="mt-2 text-base text-gray-600 px-4">Explore the latest trends and technologies shaping the future and learn how to stay ahead of the curve.</p>
-<a class="mt-4 inline-block text-base font-semibold text-[var(--gold-accent)] hover:text-[var(--deep-black)] transition-colors" href="#">Discover
-                            <span aria-hidden="true" class="ml-1">→</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="bg-[var(--olive-green)] text-[var(--off-white)]">
-<div class="container mx-auto px-6 lg:px-8 py-12">
-<div class="flex justify-center items-center flex-col">
-<div class="flex justify-center gap-6 mb-8">
-<a class="text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
-</svg>
-</a>
-<a class="text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
-</svg>
-</a>
-<a class="text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
-</svg>
-</a>
-</div>
-<p class="text-base text-center text-[var(--beige)]">© 2024 VIZION. All rights reserved.</p>
-</div>
-</div>
-</footer>
-</div>
-</div>
-<script>
+    .sticky - nav {
+        transition: all 0.3 s ease - in - out;
+    } <
+    /style> < /
+head > <
+    body class = "text-[var(--deep-black)]" >
+    <
+    div class = "relative flex size-full min-h-screen flex-col bg-[var(--off-white)] group/design-root overflow-x-hidden" >
+    <
+    div class = "layout-container flex h-full grow flex-col" >
+    <
+    header class = "sticky top-0 z-50 flex items-center justify-between whitespace-nowrap bg-[var(--off-white)]/80 backdrop-blur-sm px-12 py-6 transition-all duration-300 ease-in-out"
+id = "navbar" >
+    <
+    a class = "flex items-center gap-3 text-[var(--deep-black)]"
+href = "#" >
+    <
+    span class = "font-serif text-2xl font-medium tracking-tighter" > VIZION < /span> < /
+a > <
+    nav class = "hidden md:flex items-center gap-8" >
+    <
+    a class = "text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Home < /a> <
+a class = "text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Boutique < /a> <
+a class = "text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > About < /a> <
+a class = "text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Blog < /a> <
+a class = "text-[var(--deep-black)] text-base font-medium leading-normal hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Contact < /a> < /
+nav > <
+    button class = "hidden md:flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-[var(--deep-black)] hover:bg-[var(--beige)] transition-colors" >
+    <
+    svg fill = "currentColor"
+height = "20px"
+viewBox = "0 0 256 256"
+width = "20px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z" > < /path> < /
+svg > <
+    /button> <
+button class = "md:hidden flex items-center justify-center h-10 w-10 text-[var(--deep-black)]" >
+<
+svg fill = "none"
+height = "24px"
+stroke = "currentColor"
+stroke - width = "1.5"
+viewBox = "0 0 24 24"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+stroke - linecap = "round"
+stroke - linejoin = "round" > < /path> < /
+svg > <
+    /button> < /
+header > <
+    main class = "flex-1" >
+    <
+    section class = "py-24 sm:py-32 md:py-40 text-center" >
+    <
+    div class = "container mx-auto px-6 lg:px-8" >
+    <
+    h1 class = "text-5xl sm:text-6xl md:text-7xl font-light tracking-tighter text-[var(--deep-black)]" > VIZION < /h1> <
+p class = "mt-4 text-lg sm:text-xl md:text-2xl font-serif italic text-gray-700" > Ideas that transform perspectives. < /p> <
+div class = "mt-12 max-w-2xl mx-auto" >
+<
+p class = "text-base leading-relaxed text-gray-600" >
+At VIZION, we believe in the power of words to reshape our understanding of the world.We curate a collection of ebooks that challenge conventional thinking, spark curiosity, and inspire personal growth.Dive into new realms of knowledge and see the world through a different lens. <
+    /p> < /
+div > <
+    /div> < /
+section > <
+    section class = "py-24 bg-[var(--beige)]" >
+    <
+    div class = "container mx-auto px-6 lg:px-8" >
+    <
+    h2 class = "text-4xl font-serif font-light text-center mb-16 text-[var(--deep-black)]" > Featured Ebooks < /h2> <
+div class = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12" >
+<
+div class = "group flex flex-col items-center text-center" >
+<
+div class = "relative w-full mb-6" >
+<
+div class = "aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden" >
+<
+img alt = "Ebook cover for The Art of Mindful Living"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuBtXJVmjCFSCwSz2R9UH0Ga61d2LgV5CDrPKhEj6fybmaEDStP8yKjGDZ1GPuR1UnGsZ0FlGPfkbsTHwiWmJ3WIkC6M2vAf_Vz8ccJ-6U86wj2K9ORsSipIlkW9nZnp3NEKUZrbW_e3ZMBIDqZ2ZNbFUYjP0yCF3RDSwzb9N8ZdqgYK3eTS7ihb-6ipZwghWZ_B0ha9ZjuaRGLX0TQrRqAA8YZMzs1rizsogAbAiaHKBG97e7zkFx9WDLtyroPiUTmNlBeAJKylErw" / >
+    <
+    /div> < /
+div > <
+    h3 class = "text-2xl font-serif text-[var(--deep-black)]" > The Art of Mindful Living < /h3> <
+p class = "mt-2 text-base text-gray-600 px-4" > Explore the principles of mindfulness and discover how to cultivate a more peaceful and present life. < /p> <
+a class = "mt-4 inline-block text-base font-semibold text-[var(--gold-accent)] hover:text-[var(--deep-black)] transition-colors"
+href = "#" > Discover <
+    span aria - hidden = "true"
+class = "ml-1" > → < /span> < /
+a > <
+    /div> <
+div class = "group flex flex-col items-center text-center" >
+<
+div class = "relative w-full mb-6" >
+<
+div class = "aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden" >
+<
+img alt = "Ebook cover for The Power of Habit"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuCFxPXS9TUQwixKCy3_jf0WJah8kTA0kmd2-Xzb5fhrLVuk_Jo36okXbkseJO0XuaaMMGhBfdUZ0J4kUqeWBhu8ItZ_giVMTXSlWfi0WwoHh4ABfBNS8XstlDxljB1M6ajxPoffA8jzGrcW2VFrNhAPTQtOxDQ5u4I9jMljIl6CuTJZ7LCGIYB7HcIxo7FTIiYewTYj0e2gzmia7MAjYokntt2I8KgiEnsZsUvjX5j6h-tAIMKrM2uMto39GieEamLPqx4i2TkPSA8" / >
+    <
+    /div> < /
+div > <
+    h3 class = "text-2xl font-serif text-[var(--deep-black)]" > The Power of Habit < /h3> <
+p class = "mt-2 text-base text-gray-600 px-4" > Learn how to build good habits and
+break bad ones to achieve your goals and transform your life. < /p> <
+a class = "mt-4 inline-block text-base font-semibold text-[var(--gold-accent)] hover:text-[var(--deep-black)] transition-colors"
+href = "#" > Discover <
+    span aria - hidden = "true"
+class = "ml-1" > → < /span> < /
+a > <
+    /div> <
+div class = "group flex flex-col items-center text-center" >
+<
+div class = "relative w-full mb-6" >
+<
+div class = "aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden" >
+<
+img alt = "Ebook cover for The Future of Innovation"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuCofps72FK4GNENR2pKieodtkV2c4-iW5CM71Ps0XV-JgPztZJ8-B_3aOdjkClEp_OePxuHaBUb0WVQbZLQAuP2NP4fkSMFtgNbBs-kXwz55ffMS1Zt2Imr-wjpvXFBYpEC8D47stPHLsMvOQolLGtg8cRhCRDhNMqS0b58JF3xZLxSBTKrxyWjeBrn8CyuVgLlkSkVBedRQaFHhaMjIvTZr7wVv3pO4u6gTZ5I03P6Fb_cA9nTrThWS1VsM768shFmZiU51YABTfY" / >
+    <
+    /div> < /
+div > <
+    h3 class = "text-2xl font-serif text-[var(--deep-black)]" > The Future of Innovation < /h3> <
+p class = "mt-2 text-base text-gray-600 px-4" > Explore the latest trends and technologies shaping the future and learn how to stay ahead of the curve. < /p> <
+a class = "mt-4 inline-block text-base font-semibold text-[var(--gold-accent)] hover:text-[var(--deep-black)] transition-colors"
+href = "#" > Discover <
+    span aria - hidden = "true"
+class = "ml-1" > → < /span> < /
+a > <
+    /div> < /
+div > <
+    /div> < /
+section > <
+    /main> <
+footer class = "bg-[var(--olive-green)] text-[var(--off-white)]" >
+<
+div class = "container mx-auto px-6 lg:px-8 py-12" >
+<
+div class = "flex justify-center items-center flex-col" >
+<
+div class = "flex justify-center gap-6 mb-8" >
+<
+a class = "text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z" > < /path> < /
+svg > <
+    /a> <
+a class = "text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z" > < /path> < /
+svg > <
+    /a> <
+a class = "text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z" > < /path> < /
+svg > <
+    /a> < /
+div > <
+    p class = "text-base text-center text-[var(--beige)]" > ©2024 VIZION.All rights reserved. < /p> < /
+div > <
+    /div> < /
+footer > <
+    /div> < /
+div > <
+    script >
     // Sticky header scroll effect
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      const navbar = document.getElementById("navbar");
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+function scrollFunction() {
+    const navbar = document.getElementById("navbar");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         navbar.classList.add("py-4");
         navbar.classList.remove("py-6");
-      } else {
+    } else {
         navbar.classList.add("py-6");
         navbar.classList.remove("py-4");
-      }
     }
-  </script>
+} <
+/script>
 
-</body></html>
+<
+/body></html >
 
-<html><head>
-<meta charset="utf-8"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-      :root {
-        --olive-green: #5c6b54;
-        --off-white: #f8f7f3;
+<
+html > < head >
+    <
+    meta charset = "utf-8" / >
+    <
+    link href = "https://fonts.googleapis.com"
+rel = "preconnect" / >
+    <
+    link crossorigin = ""
+href = "https://fonts.gstatic.com/"
+rel = "preconnect" / >
+    <
+    link href = "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@400;500;700&amp;display=swap"
+rel = "stylesheet" / >
+    <
+    script src = "https://cdn.tailwindcss.com?plugins=forms,container-queries" > < /script> <
+style type = "text/tailwindcss" >
+    : root {
+        --olive - green: #5c6b54;
+        --off-white: # f8f7f3;
         --beige: #e9e2d9;
-        --deep-black: #1a1a1a;
-        --gold-accent: #c7a46f;
-      }
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      h1, h2, h3, h4, h5, h6, .font-serif {
-        font-family: 'Newsreader', serif;
-      }
-      .group:hover .group-hover\:block {
+        --deep - black: #1a1a1a;
+        --gold-accent: # c7a46f;
+    }
+body {
+    font - family: 'Inter', sans - serif;
+}
+h1, h2, h3, h4, h5, h6, .font - serif {
+        font - family: 'Newsreader', serif;
+    }
+    .group: hover.group - hover\: block {
         display: block;
-      }
-      .group:hover .group-hover\:opacity-100 {
+    }
+    .group: hover.group - hover\: opacity - 100 {
         opacity: 1;
-      }
-      .group:hover .group-hover\:scale-105 {
+    }
+    .group: hover.group - hover\: scale - 105 {
         transform: scale(1.05);
-      }
-      .sticky-nav {
+    }
+    .sticky - nav {
         position: sticky;
         top: 0;
-        z-index: 50;
-        transition: height 0.3s ease-in-out;
-      }
-      .scrolled .nav-links {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-      }
-    </style>
-</head>
-<body class="bg-[var(--off-white)] text-[var(--deep-black)]">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
-<header class="sticky-nav bg-[var(--off-white)]/80 backdrop-blur-lg border-b border-[var(--beige)] transition-all duration-300" id="navbar">
-<div class="container mx-auto px-10">
-<div class="flex items-center justify-between py-6 nav-links">
-<a class="flex items-center gap-3 text-2xl font-bold tracking-tighter text-[var(--deep-black)] font-serif" href="#">
-                    VIZION
-                </a>
-<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--deep-black)]">
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">Home</a>
-<a class="text-[var(--gold-accent)] font-semibold" href="#">Boutique</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">About</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">Blog</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">Contact</a>
-</nav>
-</div>
-</div>
-</header>
-<main class="flex-grow">
-<section class="py-16 md:py-24">
-<div class="container mx-auto px-10">
-<h1 class="text-5xl md:text-7xl font-serif font-medium text-center mb-16 text-[var(--deep-black)]">Boutique</h1>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-<div class="group relative overflow-hidden rounded-lg">
-<div class="aspect-[3/4] w-full overflow-hidden">
-<img alt="Ebook Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXPVsy5M4uLkB4WaBBIsbFaZ0xqMQKk1RoVXESCD1wMNWIsb-HEYT2HsRQbcDUJF9gHwXLZCWqeQzhtzOPS9Nzk5ICHQU2HEpiHxqrUm_Q0Vl61o7EIiPHS_FL8Wo8IplzTYkJ5wKEKv81RKYkCqh-3NXHgPAom6_U_rUkvlMLdAEzJBptibZ7BP3-t8ABmHIwxm1YTSTjEaBPgxtwKiKSnyHmzGmMGIoAahhjuhonCQYmPJUrYVvu84Lx2WaSIn788Os-9EbL4pA"/>
-</div>
-<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-<h3 class="font-serif text-2xl text-white font-medium">The Art of Minimalist Living</h3>
-<p class="text-gray-200 mt-2 mb-4">Embrace simplicity and declutter your life for more joy.</p>
-<div class="flex justify-between items-center">
-<span class="text-xl font-bold text-[var(--gold-accent)]">$19.99</span>
-<a class="bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold" href="#">Obtenir</a>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="aspect-[3/4] w-full overflow-hidden">
-<img alt="Ebook Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5C8tB27GeqX2t1Xq5D2CAIz7jvoqI33iWUFdRQQOqdTFzfSCHrTOgzWBV8uHTl2ga1mcOXvHEc1Ic0rl6EHxjUR5qJfIDTKovgC5T59i3c_ma6bpKuO6z1gSiy7WbvGO6h458HrHgp7ElVtVHi9x46S8ud9y0DW8OQ1JXgCDssLc-DD4-vXECWq8cVOjj-FRd9Ne5hgBiaqvEdFwExLPPsyuW45ukLuY04Xt4phHkI-xtVpyZsPIaLX_-is9Kg3lOBmHtraQUrIs"/>
-</div>
-<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-<h3 class="font-serif text-2xl text-white font-medium">Sustainable Fashion: A Guide</h3>
-<p class="text-gray-200 mt-2 mb-4">Discover eco-friendly fashion choices and build a sustainable wardrobe.</p>
-<div class="flex justify-between items-center">
-<span class="text-xl font-bold text-[var(--gold-accent)]">$24.99</span>
-<a class="bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold" href="#">Obtenir</a>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="aspect-[3/4] w-full overflow-hidden">
-<img alt="Ebook Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvGmuMQdGeHtjX8mKIDTcXGwH9sBAL34S2aARcW7JSjApwULzlQqTcGFRj4sCSm8jvFVyP5mgAlL4lcA0JkTAZcNY9IQpDh1NjO0X2P1sXlsyyjbYTlCXoLQCSuPitbMi1eHxyZf_rky8Z1wk0aA-8fOC-hFO0gTL8sf_ms-gwXbKbEwyAZxMdYvvoEkezHO9dx7ywNoIGhf6Og7Xdvk3lETnVLVNiKD4qNGtpYUycruX_ZiwIJMfQVazt7e01wOZSOH-6mTJqhz0"/>
-</div>
-<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-<h3 class="font-serif text-2xl text-white font-medium">Digital Nomad Handbook</h3>
-<p class="text-gray-200 mt-2 mb-4">Navigate the world as a digital nomad with practical tips and resources.</p>
-<div class="flex justify-between items-center">
-<span class="text-xl font-bold text-[var(--gold-accent)]">$29.99</span>
-<a class="bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold" href="#">Obtenir</a>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="aspect-[3/4] w-full overflow-hidden">
-<img alt="Ebook Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTs4I8HL32P-tUrHGQuIhwvtVm_2QubQE69yva3wPeu1zy_EEqosbnKpzY3hynSoVV1dQzyxVuLVNVRrTPLZLa0rRAplRGg1OMKSpmD70-SerovPDg5KKdZVZJRdLYsB1A8zST7tFpLydFMfaLO46yg-FIO4ekJAkfGrXE05FbzIkUZI1utjl1Lg3DklnQkVxL9RCOK-jsfO88Tnh5ZzFgr62HpigCd10Ebz_ne27nCc9-1pvS6ebbKBUepl3SV5o-EO5GK_S238A"/>
-</div>
-<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-<h3 class="font-serif text-2xl text-white font-medium">Mindful Eating for Wellness</h3>
-<p class="text-gray-200 mt-2 mb-4">Nourish your body and mind with mindful eating practices.</p>
-<div class="flex justify-between items-center">
-<span class="text-xl font-bold text-[var(--gold-accent)]">$19.99</span>
-<a class="bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold" href="#">Obtenir</a>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="aspect-[3/4] w-full overflow-hidden">
-<img alt="Ebook Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChn8TzdpqgIA2ZTvYGN0-EFwQllaVQaG49EF_ndZLxvQsNf7oXg1guCtc7yYv4MgoF1YzJVz9R4_cq1aghoUZq68Lc6sobs4gesOrrDoPXHmJJMXjRozcXqmZj05iANj0p20WaOVvK9uLMOTrkjx71_Iwle4UT2P3ymwlW2MmnzSLoXmtinWnh6EF0uI1zywc_6atFKv9tz-2yeDXTdcFwHJ-SMZJu0UxGrOJru_BaizsfvujdAjyqSYVQNtEGH5xm0ccEImxrts4"/>
-</div>
-<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-<h3 class="font-serif text-2xl text-white font-medium">Creative Writing Prompts</h3>
-<p class="text-gray-200 mt-2 mb-4">Unlock your creativity with a collection of inspiring writing prompts.</p>
-<div class="flex justify-between items-center">
-<span class="text-xl font-bold text-[var(--gold-accent)]">$14.99</span>
-<a class="bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold" href="#">Obtenir</a>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="aspect-[3/4] w-full overflow-hidden">
-<img alt="Ebook Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQtLzktTesNHS9GXSjlicDJ4x2F-V4osJs-hMR37UIHah1CIYNsd9TK7L8xdS2A5qgWI2vLvi6WK2fnTEmXWzHPkKI7dSCsTYG3RyHFJXxv8kvvGHHi2-r-uwuKygUEZJRXjIWxo6B43TLV1dCBlmHe9o7Q9twHpQmMkfsUaJ_GeHbB4R2F5WmPv40El3YASxNE-ACnWv-hX46mAOTTeeD993Sr1f73RYfvAWs5E46wf3a25bmdRrow5MVP0X6at9tTpuVURBUU9Q"/>
-</div>
-<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-<h3 class="font-serif text-2xl text-white font-medium">Urban Gardening Basics</h3>
-<p class="text-gray-200 mt-2 mb-4">Transform your urban space into a green oasis with our gardening guide.</p>
-<div class="flex justify-between items-center">
-<span class="text-xl font-bold text-[var(--gold-accent)]">$22.99</span>
-<a class="bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold" href="#">Obtenir</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="bg-[var(--olive-green)] text-[var(--off-white)]">
-<div class="container mx-auto px-10 py-10 text-center">
-<div class="flex justify-center gap-6 mb-6">
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c-4.01.052-5.464.204-6.62.674-1.157.47-2.09.98-3.033 1.923C1.7 5.56.757 6.494.286 7.65.03 8.444 0 9.475 0 12s.03 3.556.286 4.35c.47 1.156 1.414 2.092 2.357 3.035 1.015.945 1.95 1.455 3.033 1.923 1.156.47 2.61.622 6.62.674 3.99.05 5.464-.158 6.62-.674 1.157-.47 2.09-.98 3.033-1.923.944-.943 1.887-1.88 2.357-3.035.257-.794.286-1.825.286-4.35s-.03-3.556-.286-4.35c-.47-1.156-1.414-2.092-2.357-3.035C20.44 3.654 19.507 3.144 18.35 2.674 17.195 2.204 15.74 2.05 11.73 2h.585zm-1.01 1.8h-1.13c-3.843.048-5.11.2-6.117.617-.98.405-1.73.88-2.43 1.58-.7.7-1.176 1.45-1.58 2.43-.418 1.008-.57 2.275-.617 6.117v1.13c-.048 3.843.1 5.11.617 6.117.405.98.88 1.73 1.58 2.43.7.7 1.45 1.176 2.43 1.58 1.007.418 2.274.57 6.117.617h1.13c3.843-.048 5.11-.2 6.117-.617.98-.405 1.73-.88 2.43-1.58.7-.7 1.176-1.45 1.58-2.43.418-1.007.57-2.274.617-6.117v-1.13c.048-3.843-.1-5.11-.617-6.117-.405-.98-.88-1.73-1.58-2.43-.7-.7-1.45-1.176-2.43-1.58-1.008-.418-2.275-.57-6.117-.617zM12 7.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zM12 15a3 3 0 110-6 3 3 0 010 6zm6.36-8.16a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" fill-rule="evenodd"></path></svg>
-</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.258 7.342a8.583 8.583 0 01-2.47.678 4.316 4.316 0 001.89-2.38c-.83.49-1.74.85-2.7 1.03a4.307 4.307 0 00-7.33 3.92 12.223 12.223 0 01-8.87-4.5 4.307 4.307 0 001.33 5.75 4.28 4.28 0 01-1.95-.54v.05c0 2.1 1.5 3.85 3.5 4.25a4.283 4.283 0 01-1.94.07 4.313 4.313 0 004.02 2.99 8.657 8.657 0 01-5.35 1.84c-.35 0-.69-.02-1.03-.06a12.17 12.17 0 006.58 1.92c7.9 0 12.22-6.55 12.22-12.22 0-.19 0-.37-.01-.56a8.71 8.71 0 002.13-2.2z"></path></svg>
-</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
-</a>
-</div>
-<p class="text-sm text-[var(--beige)]">© 2023 VIZION. All rights reserved.</p>
-</div>
-</footer>
-</div>
-<script>
-      let lastScrollTop = 0;
-      const navbar = document.getElementById('navbar');
-      window.addEventListener("scroll", function(){
-         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-         if (scrollTop > lastScrollTop) {
-            navbar.classList.add('scrolled');
-         } else {
-            navbar.classList.remove('scrolled');
-         }
-         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-      }, false);
-    </script>
+        z - index: 50;
+        transition: height 0.3 s ease - in - out;
+    }
+    .scrolled.nav - links {
+        padding - top: 0.5 rem;
+        padding - bottom: 0.5 rem;
+    } <
+    /style> < /
+head > <
+    body class = "bg-[var(--off-white)] text-[var(--deep-black)]" >
+    <
+    div class = "relative flex size-full min-h-screen flex-col overflow-x-hidden" >
+    <
+    header class = "sticky-nav bg-[var(--off-white)]/80 backdrop-blur-lg border-b border-[var(--beige)] transition-all duration-300"
+id = "navbar" >
+    <
+    div class = "container mx-auto px-10" >
+    <
+    div class = "flex items-center justify-between py-6 nav-links" >
+    <
+    a class = "flex items-center gap-3 text-2xl font-bold tracking-tighter text-[var(--deep-black)] font-serif"
+href = "#" >
+    VIZION <
+    /a> <
+nav class = "hidden md:flex items-center gap-8 text-sm font-medium text-[var(--deep-black)]" >
+<
+a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Home < /a> <
+a class = "text-[var(--gold-accent)] font-semibold"
+href = "#" > Boutique < /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > About < /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Blog < /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Contact < /a> < /
+nav > <
+    /div> < /
+div > <
+    /header> <
+main class = "flex-grow" >
+<
+section class = "py-16 md:py-24" >
+<
+div class = "container mx-auto px-10" >
+<
+h1 class = "text-5xl md:text-7xl font-serif font-medium text-center mb-16 text-[var(--deep-black)]" > Boutique < /h1> <
+div class = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16" >
+<
+div class = "group relative overflow-hidden rounded-lg" >
+<
+div class = "aspect-[3/4] w-full overflow-hidden" >
+<
+img alt = "Ebook Cover"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuDXPVsy5M4uLkB4WaBBIsbFaZ0xqMQKk1RoVXESCD1wMNWIsb-HEYT2HsRQbcDUJF9gHwXLZCWqeQzhtzOPS9Nzk5ICHQU2HEpiHxqrUm_Q0Vl61o7EIiPHS_FL8Wo8IplzTYkJ5wKEKv81RKYkCqh-3NXHgPAom6_U_rUkvlMLdAEzJBptibZ7BP3-t8ABmHIwxm1YTSTjEaBPgxtwKiKSnyHmzGmMGIoAahhjuhonCQYmPJUrYVvu84Lx2WaSIn788Os-9EbL4pA" / >
+    <
+    /div> <
+div class = "absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6" >
+<
+h3 class = "font-serif text-2xl text-white font-medium" > The Art of Minimalist Living < /h3> <
+p class = "text-gray-200 mt-2 mb-4" > Embrace simplicity and declutter your life
+for more joy. < /p> <
+div class = "flex justify-between items-center" >
+<
+span class = "text-xl font-bold text-[var(--gold-accent)]" > $19 .99 < /span> <
+a class = "bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold"
+href = "#" > Obtenir < /a> < /
+div > <
+    /div> < /
+div > <
+    div class = "group relative overflow-hidden rounded-lg" >
+    <
+    div class = "aspect-[3/4] w-full overflow-hidden" >
+    <
+    img alt = "Ebook Cover"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuC5C8tB27GeqX2t1Xq5D2CAIz7jvoqI33iWUFdRQQOqdTFzfSCHrTOgzWBV8uHTl2ga1mcOXvHEc1Ic0rl6EHxjUR5qJfIDTKovgC5T59i3c_ma6bpKuO6z1gSiy7WbvGO6h458HrHgp7ElVtVHi9x46S8ud9y0DW8OQ1JXgCDssLc-DD4-vXECWq8cVOjj-FRd9Ne5hgBiaqvEdFwExLPPsyuW45ukLuY04Xt4phHkI-xtVpyZsPIaLX_-is9Kg3lOBmHtraQUrIs" / >
+    <
+    /div> <
+div class = "absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6" >
+<
+h3 class = "font-serif text-2xl text-white font-medium" > Sustainable Fashion: A Guide < /h3> <
+p class = "text-gray-200 mt-2 mb-4" > Discover eco - friendly fashion choices and build a sustainable wardrobe. < /p> <
+div class = "flex justify-between items-center" >
+<
+span class = "text-xl font-bold text-[var(--gold-accent)]" > $24 .99 < /span> <
+a class = "bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold"
+href = "#" > Obtenir < /a> < /
+div > <
+    /div> < /
+div > <
+    div class = "group relative overflow-hidden rounded-lg" >
+    <
+    div class = "aspect-[3/4] w-full overflow-hidden" >
+    <
+    img alt = "Ebook Cover"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuAvGmuMQdGeHtjX8mKIDTcXGwH9sBAL34S2aARcW7JSjApwULzlQqTcGFRj4sCSm8jvFVyP5mgAlL4lcA0JkTAZcNY9IQpDh1NjO0X2P1sXlsyyjbYTlCXoLQCSuPitbMi1eHxyZf_rky8Z1wk0aA-8fOC-hFO0gTL8sf_ms-gwXbKbEwyAZxMdYvvoEkezHO9dx7ywNoIGhf6Og7Xdvk3lETnVLVNiKD4qNGtpYUycruX_ZiwIJMfQVazt7e01wOZSOH-6mTJqhz0" / >
+    <
+    /div> <
+div class = "absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6" >
+<
+h3 class = "font-serif text-2xl text-white font-medium" > Digital Nomad Handbook < /h3> <
+p class = "text-gray-200 mt-2 mb-4" > Navigate the world as a digital nomad with practical tips and resources. < /p> <
+div class = "flex justify-between items-center" >
+<
+span class = "text-xl font-bold text-[var(--gold-accent)]" > $29 .99 < /span> <
+a class = "bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold"
+href = "#" > Obtenir < /a> < /
+div > <
+    /div> < /
+div > <
+    div class = "group relative overflow-hidden rounded-lg" >
+    <
+    div class = "aspect-[3/4] w-full overflow-hidden" >
+    <
+    img alt = "Ebook Cover"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuDTs4I8HL32P-tUrHGQuIhwvtVm_2QubQE69yva3wPeu1zy_EEqosbnKpzY3hynSoVV1dQzyxVuLVNVRrTPLZLa0rRAplRGg1OMKSpmD70-SerovPDg5KKdZVZJRdLYsB1A8zST7tFpLydFMfaLO46yg-FIO4ekJAkfGrXE05FbzIkUZI1utjl1Lg3DklnQkVxL9RCOK-jsfO88Tnh5ZzFgr62HpigCd10Ebz_ne27nCc9-1pvS6ebbKBUepl3SV5o-EO5GK_S238A" / >
+    <
+    /div> <
+div class = "absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6" >
+<
+h3 class = "font-serif text-2xl text-white font-medium" > Mindful Eating
+for Wellness < /h3> <
+p class = "text-gray-200 mt-2 mb-4" > Nourish your body and mind with mindful eating practices. < /p> <
+div class = "flex justify-between items-center" >
+<
+span class = "text-xl font-bold text-[var(--gold-accent)]" > $19 .99 < /span> <
+a class = "bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold"
+href = "#" > Obtenir < /a> < /
+div > <
+    /div> < /
+div > <
+    div class = "group relative overflow-hidden rounded-lg" >
+    <
+    div class = "aspect-[3/4] w-full overflow-hidden" >
+    <
+    img alt = "Ebook Cover"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuChn8TzdpqgIA2ZTvYGN0-EFwQllaVQaG49EF_ndZLxvQsNf7oXg1guCtc7yYv4MgoF1YzJVz9R4_cq1aghoUZq68Lc6sobs4gesOrrDoPXHmJJMXjRozcXqmZj05iANj0p20WaOVvK9uLMOTrkjx71_Iwle4UT2P3ymwlW2MmnzSLoXmtinWnh6EF0uI1zywc_6atFKv9tz-2yeDXTdcFwHJ-SMZJu0UxGrOJru_BaizsfvujdAjyqSYVQNtEGH5xm0ccEImxrts4" / >
+    <
+    /div> <
+div class = "absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6" >
+<
+h3 class = "font-serif text-2xl text-white font-medium" > Creative Writing Prompts < /h3> <
+p class = "text-gray-200 mt-2 mb-4" > Unlock your creativity with a collection of inspiring writing prompts. < /p> <
+div class = "flex justify-between items-center" >
+<
+span class = "text-xl font-bold text-[var(--gold-accent)]" > $14 .99 < /span> <
+a class = "bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold"
+href = "#" > Obtenir < /a> < /
+div > <
+    /div> < /
+div > <
+    div class = "group relative overflow-hidden rounded-lg" >
+    <
+    div class = "aspect-[3/4] w-full overflow-hidden" >
+    <
+    img alt = "Ebook Cover"
+class = "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+src = "https://lh3.googleusercontent.com/aida-public/AB6AXuBQtLzktTesNHS9GXSjlicDJ4x2F-V4osJs-hMR37UIHah1CIYNsd9TK7L8xdS2A5qgWI2vLvi6WK2fnTEmXWzHPkKI7dSCsTYG3RyHFJXxv8kvvGHHi2-r-uwuKygUEZJRXjIWxo6B43TLV1dCBlmHe9o7Q9twHpQmMkfsUaJ_GeHbB4R2F5WmPv40El3YASxNE-ACnWv-hX46mAOTTeeD993Sr1f73RYfvAWs5E46wf3a25bmdRrow5MVP0X6at9tTpuVURBUU9Q" / >
+    <
+    /div> <
+div class = "absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6" >
+<
+h3 class = "font-serif text-2xl text-white font-medium" > Urban Gardening Basics < /h3> <
+p class = "text-gray-200 mt-2 mb-4" > Transform your urban space into a green oasis with our gardening guide. < /p> <
+div class = "flex justify-between items-center" >
+<
+span class = "text-xl font-bold text-[var(--gold-accent)]" > $22 .99 < /span> <
+a class = "bg-[var(--gold-accent)] text-white py-2 px-6 rounded-full hover:bg-opacity-90 transition-colors text-sm font-semibold"
+href = "#" > Obtenir < /a> < /
+div > <
+    /div> < /
+div > <
+    /div> < /
+div > <
+    /section> < /
+main > <
+    footer class = "bg-[var(--olive-green)] text-[var(--off-white)]" >
+    <
+    div class = "container mx-auto px-10 py-10 text-center" >
+    <
+    div class = "flex justify-center gap-6 mb-6" >
+    <
+    a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg aria - hidden = "true"
+class = "w-6 h-6"
+fill = "currentColor"
+viewBox = "0 0 24 24" > < path clip - rule = "evenodd"
+d = "M12.315 2c-4.01.052-5.464.204-6.62.674-1.157.47-2.09.98-3.033 1.923C1.7 5.56.757 6.494.286 7.65.03 8.444 0 9.475 0 12s.03 3.556.286 4.35c.47 1.156 1.414 2.092 2.357 3.035 1.015.945 1.95 1.455 3.033 1.923 1.156.47 2.61.622 6.62.674 3.99.05 5.464-.158 6.62-.674 1.157-.47 2.09-.98 3.033-1.923.944-.943 1.887-1.88 2.357-3.035.257-.794.286-1.825.286-4.35s-.03-3.556-.286-4.35c-.47-1.156-1.414-2.092-2.357-3.035C20.44 3.654 19.507 3.144 18.35 2.674 17.195 2.204 15.74 2.05 11.73 2h.585zm-1.01 1.8h-1.13c-3.843.048-5.11.2-6.117.617-.98.405-1.73.88-2.43 1.58-.7.7-1.176 1.45-1.58 2.43-.418 1.008-.57 2.275-.617 6.117v1.13c-.048 3.843.1 5.11.617 6.117.405.98.88 1.73 1.58 2.43.7.7 1.45 1.176 2.43 1.58 1.007.418 2.274.57 6.117.617h1.13c3.843-.048 5.11-.2 6.117-.617.98-.405 1.73-.88 2.43-1.58.7-.7 1.176-1.45 1.58-2.43.418-1.007.57-2.274.617-6.117v-1.13c.048-3.843-.1-5.11-.617-6.117-.405-.98-.88-1.73-1.58-2.43-.7-.7-1.45-1.176-2.43-1.58-1.008-.418-2.275-.57-6.117-.617zM12 7.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zM12 15a3 3 0 110-6 3 3 0 010 6zm6.36-8.16a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
+fill - rule = "evenodd" > < /path></svg >
+    <
+    /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg aria - hidden = "true"
+class = "w-6 h-6"
+fill = "currentColor"
+viewBox = "0 0 24 24" > < path d = "M22.258 7.342a8.583 8.583 0 01-2.47.678 4.316 4.316 0 001.89-2.38c-.83.49-1.74.85-2.7 1.03a4.307 4.307 0 00-7.33 3.92 12.223 12.223 0 01-8.87-4.5 4.307 4.307 0 001.33 5.75 4.28 4.28 0 01-1.95-.54v.05c0 2.1 1.5 3.85 3.5 4.25a4.283 4.283 0 01-1.94.07 4.313 4.313 0 004.02 2.99 8.657 8.657 0 01-5.35 1.84c-.35 0-.69-.02-1.03-.06a12.17 12.17 0 006.58 1.92c7.9 0 12.22-6.55 12.22-12.22 0-.19 0-.37-.01-.56a8.71 8.71 0 002.13-2.2z" > < /path></svg >
+    <
+    /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg aria - hidden = "true"
+class = "w-6 h-6"
+fill = "currentColor"
+viewBox = "0 0 24 24" > < path clip - rule = "evenodd"
+d = "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+fill - rule = "evenodd" > < /path></svg >
+    <
+    /a> < /
+div > <
+    p class = "text-sm text-[var(--beige)]" > ©2023 VIZION.All rights reserved. < /p> < /
+div > <
+    /footer> < /
+div > <
+    script >
+    let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+window.addEventListener("scroll", function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}, false); <
+/script>
 
-</body></html>
+<
+/body></html >
 
-<html><head>
-<meta charset="utf-8"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<title>Stitch Design</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-      :root {
-        --olive-green: #596451;
-        --off-white: #f8f7f4;
+<
+html > < head >
+    <
+    meta charset = "utf-8" / >
+    <
+    link href = "https://fonts.googleapis.com"
+rel = "preconnect" / >
+    <
+    link crossorigin = ""
+href = "https://fonts.gstatic.com/"
+rel = "preconnect" / >
+    <
+    link as = "style"
+href = "https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Inter%3Awght%40400%3B500%3B700%3B900"
+onload = "this.rel='stylesheet'"
+rel = "stylesheet" / >
+    <
+    link href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+rel = "stylesheet" / >
+    <
+    title > Stitch Design < /title> <
+link href = "data:image/x-icon;base64,"
+rel = "icon"
+type = "image/x-icon" / >
+    <
+    script src = "https://cdn.tailwindcss.com?plugins=forms,container-queries" > < /script> <
+style type = "text/tailwindcss" >
+    : root {
+        --olive - green: #596451;
+        --off-white: # f8f7f4;
         --beige: #e5e0d4;
-        --deep-black: #1a1a1a;
-        --gold-accent: #b48c47;
-      }
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      .font-serif {
-        font-family: "Newsreader", serif;
-      }
-      .nav-link {
-        @apply relative text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors duration-300;
-      }
-      .nav-link::after {
+        --deep - black: #1a1a1a;
+        --gold-accent: # b48c47;
+    }
+body {
+    font - family: "Inter", sans - serif;
+}
+.font - serif {
+        font - family: "Newsreader", serif;
+    }
+    .nav - link {
+        @apply relative text - [var (--deep - black)] hover: text - [var (--gold - accent)] transition - colors duration - 300;
+    }
+    .nav - link::after {
         content: "";
-        @apply absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--gold-accent)] transition-all duration-300;
-      }
-      .nav-link:hover::after {
-        @apply w-full;
-      }
-    </style>
-</head>
-<body class="bg-[var(--off-white)] text-[var(--deep-black)]">
-<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-<header class="sticky top-0 z-50 bg-[var(--off-white)]/80 backdrop-blur-sm transition-all duration-300">
-<div class="container mx-auto px-6 py-4">
-<div class="flex items-center justify-between whitespace-nowrap">
-<a class="flex items-center gap-2 text-[var(--deep-black)]" href="#">
-<span class="font-serif text-2xl font-bold tracking-tighter">VIZION</span>
-</a>
-<nav class="hidden md:flex items-center gap-8">
-<a class="nav-link text-sm font-medium" href="#">Home</a>
-<a class="nav-link text-sm font-medium" href="#">Boutique</a>
-<a class="nav-link text-sm font-medium" href="#">About</a>
-<a class="nav-link text-sm font-medium" href="#">Blog</a>
-<a class="nav-link text-sm font-medium" href="#">Contact</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors duration-300">
-<span class="material-symbols-outlined"> search </span>
-</button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border-2 border-[var(--beige)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQLEHtT-oiigQOIpTj5Laxv8Ot8uox24k9zzMbD3fRQm2aU9QX1gAwDi_5URUcorbT6IDKw5py9LcHRUracatjmymY6WYs27Bbg1hNo78bBkGfzZ1Y1H92S1GkM4R5Q7vk2PVsgR5aaXON98ePDUWKwvSrQAt9GH81sh2BbuynoXA0OnpU2dZDsSdhDdv4LFau0lbtBcDjlHyCPhyrzV7oh9IEkU5xRUQhkPEIS3sqRvnt3pJf4XSlxicIsc6qJtH3MV6fXPL3HP8");'></div>
-<button class="md:hidden text-[var(--deep-black)]">
-<span class="material-symbols-outlined"> menu </span>
-</button>
-</div>
-</div>
-</div>
-</header>
-<main class="flex-grow">
-<div class="container mx-auto px-6 py-16 lg:py-24">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-16">
-<h1 class="font-serif text-5xl md:text-7xl font-bold text-[var(--deep-black)] tracking-tight leading-tight">The Story of VIZION</h1>
-<p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">A journey of passion, purpose, and the power of words.</p>
-</div>
-<div class="grid md:grid-cols-5 gap-12 items-center">
-<div class="md:col-span-3">
-<p class="text-lg leading-relaxed text-gray-700 mb-6">
-                  At VIZION, we believe in the power of stories to transform lives. Founded by Amelia Stone, a visionary author and entrepreneur, VIZION is more than just a brand; it's a movement.
-                </p>
-<p class="text-lg leading-relaxed text-gray-700">
-                  Amelia's journey from a small-town dreamer to a celebrated author is the heart of VIZION. Her passion for storytelling and her commitment to empowering others through knowledge are the driving forces behind our curated collection of ebooks.
-                </p>
-</div>
-<div class="md:col-span-2">
-<div class="w-full bg-center bg-no-repeat bg-cover aspect-[4/5] rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArZMu_1UGwI0fIShVYy-dNmNCyMvmWrprSMLKbGnBxBpPSIIRuGL6O3ihplCWjgGur_2Tki_Fq6ph4JzqISIRwSgAeYp7bH6X3JY2fFKlF_ugAvJLNQFhRW9lUSva-452LYoQZlHqZDfP7BD1IOzngS3Drio3bqQIP_3LgGWfdblI-nYQEyBDd2_yCCU2EFEPpuRItq3iO3t0mFfwmzZIfsa8d38BfWbZR7y2v23KH8D48yfV7iZF6LTWZvt58IRlnIgOErpESL1I");'></div>
-</div>
-</div>
-<div class="mt-24">
-<h2 class="font-serif text-4xl md:text-5xl font-bold text-[var(--deep-black)] tracking-tight text-center mb-16">Why VIZION</h2>
-<div class="grid md:grid-cols-3 gap-10">
-<div class="text-center p-6 border border-[var(--beige)] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-<div class="inline-block p-4 bg-[var(--beige)]/50 rounded-full mb-4">
-<span class="material-symbols-outlined text-4xl text-[var(--gold-accent)]"> auto_awesome </span>
-</div>
-<h3 class="font-serif text-2xl font-bold text-[var(--deep-black)] mb-2">Creativity</h3>
-<p class="text-gray-600">We foster creativity in every story, pushing boundaries and exploring new perspectives.</p>
-</div>
-<div class="text-center p-6 border border-[var(--beige)] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-<div class="inline-block p-4 bg-[var(--beige)]/50 rounded-full mb-4">
-<span class="material-symbols-outlined text-4xl text-[var(--gold-accent)]"> search </span>
-</div>
-<h3 class="font-serif text-2xl font-bold text-[var(--deep-black)] mb-2">Clarity</h3>
-<p class="text-gray-600">We provide clear, concise, and actionable insights to help you achieve your goals.</p>
-</div>
-<div class="text-center p-6 border border-[var(--beige)] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-<div class="inline-block p-4 bg-[var(--beige)]/50 rounded-full mb-4">
-<span class="material-symbols-outlined text-4xl text-[var(--gold-accent)]"> track_changes </span>
-</div>
-<h3 class="font-serif text-2xl font-bold text-[var(--deep-black)] mb-2">Impact</h3>
-<p class="text-gray-600">We aim to make a lasting impact on your life, inspiring positive change and growth.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer class="bg-[var(--olive-green)] text-[var(--off-white)]">
-<div class="container mx-auto px-6 py-8">
-<div class="flex flex-col items-center justify-center">
-<div class="flex space-x-6 mb-4">
-<a class="hover:text-[var(--gold-accent)] transition-colors duration-300" href="#">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-</svg>
-</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors duration-300" href="#">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-<path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.796 2.796c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.796 2.796c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.796-2.796c-.247-.636-.416-1.363-.465-2.427C2.013 15.098 2 14.744 2 12.315s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.796-2.796c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7.151c-2.673 0-4.846 2.173-4.846 4.846s2.173 4.846 4.846 4.846 4.846-2.173 4.846-4.846-2.173-4.846-4.846-4.846zm0 7.897c-1.684 0-3.051-1.367-3.051-3.051s1.367-3.051 3.051-3.051 3.051 1.367 3.051 3.051-1.367 3.051-3.051 3.051zm4.905-6.84c-.742 0-1.344.602-1.344 1.344s.602 1.344 1.344 1.344 1.344-.602 1.344-1.344-.602-1.344-1.344-1.344z" fill-rule="evenodd"></path>
-</svg>
-</a>
-<a class="hover:text-[var(--gold-accent)] transition-colors duration-300" href="#">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-<path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
-</svg>
-</a>
-</div>
-<p class="text-sm opacity-80">© 2024 VIZION. All rights reserved.</p>
-</div>
-</div>
-</footer>
-</div>
+        @apply absolute bottom - 0 left - 0 w - 0 h - 0.5 bg - [var (--gold - accent)] transition - all duration - 300;
+    }
+    .nav - link: hover::after {
+        @apply w - full;
+    } <
+    /style> < /
+head > <
+    body class = "bg-[var(--off-white)] text-[var(--deep-black)]" >
+    <
+    div class = "relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" >
+    <
+    header class = "sticky top-0 z-50 bg-[var(--off-white)]/80 backdrop-blur-sm transition-all duration-300" >
+    <
+    div class = "container mx-auto px-6 py-4" >
+    <
+    div class = "flex items-center justify-between whitespace-nowrap" >
+    <
+    a class = "flex items-center gap-2 text-[var(--deep-black)]"
+href = "#" >
+    <
+    span class = "font-serif text-2xl font-bold tracking-tighter" > VIZION < /span> < /
+a > <
+    nav class = "hidden md:flex items-center gap-8" >
+    <
+    a class = "nav-link text-sm font-medium"
+href = "#" > Home < /a> <
+a class = "nav-link text-sm font-medium"
+href = "#" > Boutique < /a> <
+a class = "nav-link text-sm font-medium"
+href = "#" > About < /a> <
+a class = "nav-link text-sm font-medium"
+href = "#" > Blog < /a> <
+a class = "nav-link text-sm font-medium"
+href = "#" > Contact < /a> < /
+nav > <
+    div class = "flex items-center gap-4" >
+    <
+    button class = "text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors duration-300" >
+    <
+    span class = "material-symbols-outlined" > search < /span> < /
+button > <
+    div class = "bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border-2 border-[var(--beige)]"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQLEHtT-oiigQOIpTj5Laxv8Ot8uox24k9zzMbD3fRQm2aU9QX1gAwDi_5URUcorbT6IDKw5py9LcHRUracatjmymY6WYs27Bbg1hNo78bBkGfzZ1Y1H92S1GkM4R5Q7vk2PVsgR5aaXON98ePDUWKwvSrQAt9GH81sh2BbuynoXA0OnpU2dZDsSdhDdv4LFau0lbtBcDjlHyCPhyrzV7oh9IEkU5xRUQhkPEIS3sqRvnt3pJf4XSlxicIsc6qJtH3MV6fXPL3HP8");' > < /div> <
+button class = "md:hidden text-[var(--deep-black)]" >
+<
+span class = "material-symbols-outlined" > menu < /span> < /
+button > <
+    /div> < /
+div > <
+    /div> < /
+header > <
+    main class = "flex-grow" >
+    <
+    div class = "container mx-auto px-6 py-16 lg:py-24" >
+    <
+    div class = "max-w-4xl mx-auto" >
+    <
+    div class = "text-center mb-16" >
+    <
+    h1 class = "font-serif text-5xl md:text-7xl font-bold text-[var(--deep-black)] tracking-tight leading-tight" > The Story of VIZION < /h1> <
+p class = "mt-6 text-lg text-gray-600 max-w-2xl mx-auto" > A journey of passion, purpose, and the power of words. < /p> < /
+div > <
+    div class = "grid md:grid-cols-5 gap-12 items-center" >
+    <
+    div class = "md:col-span-3" >
+    <
+    p class = "text-lg leading-relaxed text-gray-700 mb-6" >
+    At VIZION, we believe in the power of stories to transform lives.Founded by Amelia Stone, a visionary author and entrepreneur, VIZION is more than just a brand;
+it 's a movement. < /
+p > <
+    p class = "text-lg leading-relaxed text-gray-700" >
+    Amelia 's journey from a small-town dreamer to a celebrated author is the heart of VIZION. Her passion for storytelling and her commitment to empowering others through knowledge are the driving forces behind our curated collection of ebooks. < /
+p > <
+    /div> <
+div class = "md:col-span-2" >
+<
+div class = "w-full bg-center bg-no-repeat bg-cover aspect-[4/5] rounded-lg"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArZMu_1UGwI0fIShVYy-dNmNCyMvmWrprSMLKbGnBxBpPSIIRuGL6O3ihplCWjgGur_2Tki_Fq6ph4JzqISIRwSgAeYp7bH6X3JY2fFKlF_ugAvJLNQFhRW9lUSva-452LYoQZlHqZDfP7BD1IOzngS3Drio3bqQIP_3LgGWfdblI-nYQEyBDd2_yCCU2EFEPpuRItq3iO3t0mFfwmzZIfsa8d38BfWbZR7y2v23KH8D48yfV7iZF6LTWZvt58IRlnIgOErpESL1I");' > < /div> < /
+div > <
+    /div> <
+div class = "mt-24" >
+<
+h2 class = "font-serif text-4xl md:text-5xl font-bold text-[var(--deep-black)] tracking-tight text-center mb-16" > Why VIZION < /h2> <
+div class = "grid md:grid-cols-3 gap-10" >
+<
+div class = "text-center p-6 border border-[var(--beige)] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white" >
+<
+div class = "inline-block p-4 bg-[var(--beige)]/50 rounded-full mb-4" >
+<
+span class = "material-symbols-outlined text-4xl text-[var(--gold-accent)]" > auto_awesome < /span> < /
+div > <
+    h3 class = "font-serif text-2xl font-bold text-[var(--deep-black)] mb-2" > Creativity < /h3> <
+p class = "text-gray-600" > We foster creativity in every story, pushing boundaries and exploring new perspectives. < /p> < /
+div > <
+    div class = "text-center p-6 border border-[var(--beige)] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white" >
+    <
+    div class = "inline-block p-4 bg-[var(--beige)]/50 rounded-full mb-4" >
+    <
+    span class = "material-symbols-outlined text-4xl text-[var(--gold-accent)]" > search < /span> < /
+div > <
+    h3 class = "font-serif text-2xl font-bold text-[var(--deep-black)] mb-2" > Clarity < /h3> <
+p class = "text-gray-600" > We provide clear, concise, and actionable insights to help you achieve your goals. < /p> < /
+div > <
+    div class = "text-center p-6 border border-[var(--beige)] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white" >
+    <
+    div class = "inline-block p-4 bg-[var(--beige)]/50 rounded-full mb-4" >
+    <
+    span class = "material-symbols-outlined text-4xl text-[var(--gold-accent)]" > track_changes < /span> < /
+div > <
+    h3 class = "font-serif text-2xl font-bold text-[var(--deep-black)] mb-2" > Impact < /h3> <
+p class = "text-gray-600" > We aim to make a lasting impact on your life, inspiring positive change and growth. < /p> < /
+div > <
+    /div> < /
+div > <
+    /div> < /
+div > <
+    /main> <
+footer class = "bg-[var(--olive-green)] text-[var(--off-white)]" >
+<
+div class = "container mx-auto px-6 py-8" >
+<
+div class = "flex flex-col items-center justify-center" >
+<
+div class = "flex space-x-6 mb-4" >
+<
+a class = "hover:text-[var(--gold-accent)] transition-colors duration-300"
+href = "#" >
+    <
+    svg aria - hidden = "true"
+class = "h-6 w-6"
+fill = "currentColor"
+viewBox = "0 0 24 24" >
+    <
+    path d = "M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" > < /path> < /
+svg > <
+    /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors duration-300"
+href = "#" >
+    <
+    svg aria - hidden = "true"
+class = "h-6 w-6"
+fill = "currentColor"
+viewBox = "0 0 24 24" >
+    <
+    path clip - rule = "evenodd"
+d = "M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.796 2.796c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.796 2.796c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.796-2.796c-.247-.636-.416-1.363-.465-2.427C2.013 15.098 2 14.744 2 12.315s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.796-2.796c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7.151c-2.673 0-4.846 2.173-4.846 4.846s2.173 4.846 4.846 4.846 4.846-2.173 4.846-4.846-2.173-4.846-4.846-4.846zm0 7.897c-1.684 0-3.051-1.367-3.051-3.051s1.367-3.051 3.051-3.051 3.051 1.367 3.051 3.051-1.367 3.051-3.051 3.051zm4.905-6.84c-.742 0-1.344.602-1.344 1.344s.602 1.344 1.344 1.344 1.344-.602 1.344-1.344-.602-1.344-1.344-1.344z"
+fill - rule = "evenodd" > < /path> < /
+svg > <
+    /a> <
+a class = "hover:text-[var(--gold-accent)] transition-colors duration-300"
+href = "#" >
+    <
+    svg aria - hidden = "true"
+class = "h-6 w-6"
+fill = "currentColor"
+viewBox = "0 0 24 24" >
+    <
+    path clip - rule = "evenodd"
+d = "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+fill - rule = "evenodd" > < /path> < /
+svg > <
+    /a> < /
+div > <
+    p class = "text-sm opacity-80" > ©2024 VIZION.All rights reserved. < /p> < /
+div > <
+    /div> < /
+footer > <
+    /div>
 
-</body></html>
+    <
+    /body></html >
 
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>VIZION - Blog</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-    :root {
-      --olive-green: #5C6B59;
-      --off-white: #F8F7F4;
-      --beige: #EAE6E1;
-      --deep-black: #1A1A1A;
-      --gold-accent: #C4A264;
+    <
+    !DOCTYPE html >
+    <
+    html lang = "en" > < head >
+    <
+    meta charset = "utf-8" / >
+    <
+    meta content = "width=device-width, initial-scale=1.0"
+name = "viewport" / >
+    <
+    link crossorigin = ""
+href = "https://fonts.gstatic.com/"
+rel = "preconnect" / >
+    <
+    link as = "style"
+href = "https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+onload = "this.rel='stylesheet'"
+rel = "stylesheet" / >
+    <
+    title > VIZION - Blog < /title> <
+link href = "data:image/x-icon;base64,"
+rel = "icon"
+type = "image/x-icon" / >
+    <
+    script src = "https://cdn.tailwindcss.com?plugins=forms,container-queries" > < /script> <
+style type = "text/tailwindcss" >
+    : root {
+        --olive - green: #5C6B59;
+      --off-white: # F8F7F4;
+        --beige: #EAE6E1;
+        --deep - black: #1A1A1A;
+      --gold-accent: # C4A264;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    h1, h2, h3, h4, h5, h6, .serif {
-      font-family: 'Newsreader', serif;
-    }
-    .sticky-header {
+body {
+    font - family: 'Inter', sans - serif;
+}
+h1, h2, h3, h4, h5, h6, .serif {
+    font - family: 'Newsreader', serif;
+}
+.sticky - header {
         position: sticky;
         top: 0;
-        background-color: var(--off-white);
-        z-index: 50;
-        transition: all 0.3s ease-in-out;
-    }
-  </style>
-</head>
-<body class="bg-[var(--off-white)] text-[var(--deep-black)]">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
-<header class="sticky-header flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--beige)] px-10 py-6">
-<div class="flex items-center gap-2">
-<a class="text-2xl font-bold tracking-tighter serif text-[var(--deep-black)]" href="#">VIZION</a>
-</div>
-<nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-<a class="text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors" href="#">Home</a>
-<a class="text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors" href="#">Boutique</a>
-<a class="text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors" href="#">About</a>
-<a class="font-bold text-[var(--gold-accent)]" href="#">Blog</a>
-<a class="text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors" href="#">Contact</a>
-</nav>
-<div class="flex items-center">
-<button class="flex items-center justify-center size-10 rounded-full hover:bg-[var(--beige)] transition-colors">
-<svg class="text-[var(--deep-black)]" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-</svg>
-</button>
-</div>
-</header>
-<main class="flex-1">
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-<div class="text-center mb-16">
-<h1 class="text-5xl md:text-7xl font-bold tracking-tighter serif">From Our Journal</h1>
-<p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Insights, stories, and conversations about the world of literature.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20">
-<div class="group">
-<a class="block overflow-hidden rounded-lg" href="#">
-<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDceGBLws5WzBTiHenuoXRiEnNQbdQ_foTzejEAthdXDyYga9azp07YXzym-kV2VJoe3y7lE-0vTCxR63O8nZwdv56Ufh6y03jjQ9Wytmyxoh8f9sHizwSUrxDX4z0G_R5bz8OaQEmZlwyj3-ogLH6fvQRZ9ABaknwd-2_HnWxu45eUhqYizqqqgjm3TIhnBSRm_O6ByS_qSQYoRGMTCXXnsYVrWIZ0iqBjkVZ4WnD00qblbbu2CchrVRQouPS41QZRilMKYN6dLb8");'></div>
-</a>
-<div class="mt-6">
-<h3 class="text-2xl font-medium serif leading-snug"><a class="hover:text-[var(--gold-accent)] transition-colors" href="#">The Art of Mindful Reading</a></h3>
-<p class="mt-3 text-gray-600 leading-relaxed">Explore the transformative power of mindful reading, a practice that enhances focus, comprehension, and appreciation for literature.</p>
-<a class="mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline" href="#">Read more</a>
-</div>
-</div>
-<div class="group">
-<a class="block overflow-hidden rounded-lg" href="#">
-<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQEmxVuSfkNVj0rH9JP7KdLcD51f5DYbcDdYDpNBboboUt5qxMjwQf746l3SK3X9pfjghUQW8oKH7XlQ6TuFru1sNb2EZfII0ehhIHKcGLWGnZfw3-SrLVo5JYYhPeVusZkIT6REFv5KbGRShRgdiR07VSL9c5Pmvp5e8XOiXrom5fogvB6KhXlcbyxWfAZeLM6r3JXu1-Z2idDv_xBGzjXRzkWGKxBziIVZ1FxYdwnJU58ZRGm4htJK48nic4pz4dIgqwk2uFPtQ");'></div>
-</a>
-<div class="mt-6">
-<h3 class="text-2xl font-medium serif leading-snug"><a class="hover:text-[var(--gold-accent)] transition-colors" href="#">Choosing the Right Ebook Reader</a></h3>
-<p class="mt-3 text-gray-600 leading-relaxed">Navigate the world of ebook readers with our comprehensive guide to find the perfect match for your reading preferences and lifestyle.</p>
-<a class="mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline" href="#">Read more</a>
-</div>
-</div>
-<div class="group">
-<a class="block overflow-hidden rounded-lg" href="#">
-<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyHpYl9AVwdnql0_Mtfm_zCvAhMC6cBYVXRMJMa6WxbKZLjbUI899Zjv3juYUFU2cBsUwAfLOeUOz5GaGvCspW1DqzjYV4qoDdKGBe7DHbleoxzuKIcVYGMFxbCbRkm_rYk_yHUvyJ1bzEji60x09mtT6YTixpPXPioaSOTOXt5XWXJXk2q3lhGHQgbvUwPJMSh9PDxN5ozIWWBjeckacfASOYZunw7IHfhx8RLpT7Eps7SHfwzr_FB-WSXm4wgk-4AtM8SqVwFS4");'></div>
-</a>
-<div class="mt-6">
-<h3 class="text-2xl font-medium serif leading-snug"><a class="hover:text-[var(--gold-accent)] transition-colors" href="#">The Future of Digital Publishing</a></h3>
-<p class="mt-3 text-gray-600 leading-relaxed">Delve into the evolving landscape of digital publishing, exploring emerging trends and their impact on authors and readers.</p>
-<a class="mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline" href="#">Read more</a>
-</div>
-</div>
-<div class="group">
-<a class="block overflow-hidden rounded-lg" href="#">
-<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfP1o1h4g6VXRvBfOquTV6O-e1_kEii9h_Vgz7uiYLjmB-FxJqgs2VSoW5l5Qima7cLtQC052ae7Kz9op42W239F8PI4Xw6I6RcxawRifKv5Cjig0oWG5YC29fs-QBTveV8yHRwRHXpPeyi8YdZLaQjjHukZKx-y4JXL3NsrxD8zKZA9_uirpsR_Nuk-hguDCrTArP0DNskP07j5iikx3gQ2GH1W_DCL9chy-lDCywNOC_g67Rpz8dy8bSCupFwVm487LEP8mWL4k");'></div>
-</a>
-<div class="mt-6">
-<h3 class="text-2xl font-medium serif leading-snug"><a class="hover:text-[var(--gold-accent)] transition-colors" href="#">Creating Your Ideal Reading Nook</a></h3>
-<p class="mt-3 text-gray-600 leading-relaxed">Transform any space into a cozy and inviting reading nook with our expert tips on lighting, seating, and decor.</p>
-<a class="mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline" href="#">Read more</a>
-</div>
-</div>
-<div class="group">
-<a class="block overflow-hidden rounded-lg" href="#">
-<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn_LfB1uwJkwn43Z2EIUSj0SaAZTM_jECFlSesD0uAkn3kCtrlMMILbLzd0Ph_XYea_7R4cI5-skwvNccTRN73qlLbUqysqAtNhtGktOzR-aXJXvORLpuCAS8lgX2C-o08BjKZl35N-K9i3paI5gOUAGF6cQNpStGyIaDaGBezPyA9sGvaRMlbkLyruxozA1L2pPd3X1RXanvhosLPCllBDgu-rbQkU1XA8M2swiasm32VSwGRbAoCyg3KsA0AagJ1PtDlHuu0CNg");'></div>
-</a>
-<div class="mt-6">
-<h3 class="text-2xl font-medium serif leading-snug"><a class="hover:text-[var(--gold-accent)] transition-colors" href="#">The Benefits of Reading Before Bed</a></h3>
-<p class="mt-3 text-gray-600 leading-relaxed">Unwind and prepare for a restful night's sleep with the soothing ritual of reading. Discover the scientific benefits.</p>
-<a class="mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline" href="#">Read more</a>
-</div>
-</div>
-<div class="group">
-<a class="block overflow-hidden rounded-lg" href="#">
-<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA64RAAbC61jt-O5IaBFq6Bz5At0ymxFrUGWX4mEOHpc5RpQBzMV9E7j9969-ZdYSabWyO9C6dbQ_Bnc84sgtr9nQw3qIzZbm5RV4U639pI3-TCzaMEmbKc8RipaSNqFzrIfo2fgENiK4GjW0Gw7rp6XV0tuRUtXt5cAGQgjDaH32zavCaH110FnNAZqvK9fzbPCLw4Gn_byz7l5PNWCMkS1pB3nXohSUoX0HZnuvWxqYSYDrTghyHrhQlkneTR4uixMiqL3IxizPU");'></div>
-</a>
-<div class="mt-6">
-<h3 class="text-2xl font-medium serif leading-snug"><a class="hover:text-[var(--gold-accent)] transition-colors" href="#">Discovering New Authors</a></h3>
-<p class="mt-3 text-gray-600 leading-relaxed">Step out of your comfort zone and find your next favorite author with our curated tips for literary exploration.</p>
-<a class="mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline" href="#">Read more</a>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer class="bg-[var(--olive-green)] text-[var(--off-white)]">
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-<div class="flex flex-col items-center justify-center">
-<div class="flex space-x-6 mb-4">
-<a class="text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg>
-</a>
-<a class="text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
-</a>
-</div>
-<p class="text-sm">© 2024 VIZION. All rights reserved.</p>
-</div>
-</div>
-</footer>
-</div>
+        background - color: var (--off - white);
+        z - index: 50;
+        transition: all 0.3 s ease - in - out;
+    } <
+    /style> < /
+head > <
+    body class = "bg-[var(--off-white)] text-[var(--deep-black)]" >
+    <
+    div class = "relative flex size-full min-h-screen flex-col overflow-x-hidden" >
+    <
+    header class = "sticky-header flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--beige)] px-10 py-6" >
+    <
+    div class = "flex items-center gap-2" >
+    <
+    a class = "text-2xl font-bold tracking-tighter serif text-[var(--deep-black)]"
+href = "#" > VIZION < /a> < /
+div > <
+    nav class = "hidden md:flex items-center gap-8 text-sm font-medium" >
+    <
+    a class = "text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Home < /a> <
+a class = "text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Boutique < /a> <
+a class = "text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > About < /a> <
+a class = "font-bold text-[var(--gold-accent)]"
+href = "#" > Blog < /a> <
+a class = "text-[var(--deep-black)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Contact < /a> < /
+nav > <
+    div class = "flex items-center" >
+    <
+    button class = "flex items-center justify-center size-10 rounded-full hover:bg-[var(--beige)] transition-colors" >
+    <
+    svg class = "text-[var(--deep-black)]"
+fill = "currentColor"
+height = "20px"
+viewBox = "0 0 256 256"
+width = "20px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z" > < /path> < /
+svg > <
+    /button> < /
+div > <
+    /header> <
+main class = "flex-1" >
+<
+div class = "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24" >
+<
+div class = "text-center mb-16" >
+<
+h1 class = "text-5xl md:text-7xl font-bold tracking-tighter serif" > From Our Journal < /h1> <
+p class = "mt-4 text-lg text-gray-600 max-w-2xl mx-auto" > Insights, stories, and conversations about the world of literature. < /p> < /
+div > <
+    div class = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20" >
+    <
+    div class = "group" >
+    <
+    a class = "block overflow-hidden rounded-lg"
+href = "#" >
+    <
+    div class = "aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDceGBLws5WzBTiHenuoXRiEnNQbdQ_foTzejEAthdXDyYga9azp07YXzym-kV2VJoe3y7lE-0vTCxR63O8nZwdv56Ufh6y03jjQ9Wytmyxoh8f9sHizwSUrxDX4z0G_R5bz8OaQEmZlwyj3-ogLH6fvQRZ9ABaknwd-2_HnWxu45eUhqYizqqqgjm3TIhnBSRm_O6ByS_qSQYoRGMTCXXnsYVrWIZ0iqBjkVZ4WnD00qblbbu2CchrVRQouPS41QZRilMKYN6dLb8");' > < /div> < /
+a > <
+    div class = "mt-6" >
+    <
+    h3 class = "text-2xl font-medium serif leading-snug" > < a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > The Art of Mindful Reading < /a></h3 >
+    <
+    p class = "mt-3 text-gray-600 leading-relaxed" > Explore the transformative power of mindful reading, a practice that enhances focus, comprehension, and appreciation
+for literature. < /p> <
+a class = "mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline"
+href = "#" > Read more < /a> < /
+div > <
+    /div> <
+div class = "group" >
+<
+a class = "block overflow-hidden rounded-lg"
+href = "#" >
+    <
+    div class = "aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQEmxVuSfkNVj0rH9JP7KdLcD51f5DYbcDdYDpNBboboUt5qxMjwQf746l3SK3X9pfjghUQW8oKH7XlQ6TuFru1sNb2EZfII0ehhIHKcGLWGnZfw3-SrLVo5JYYhPeVusZkIT6REFv5KbGRShRgdiR07VSL9c5Pmvp5e8XOiXrom5fogvB6KhXlcbyxWfAZeLM6r3JXu1-Z2idDv_xBGzjXRzkWGKxBziIVZ1FxYdwnJU58ZRGm4htJK48nic4pz4dIgqwk2uFPtQ");' > < /div> < /
+a > <
+    div class = "mt-6" >
+    <
+    h3 class = "text-2xl font-medium serif leading-snug" > < a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Choosing the Right Ebook Reader < /a></h3 >
+    <
+    p class = "mt-3 text-gray-600 leading-relaxed" > Navigate the world of ebook readers with our comprehensive guide to find the perfect match
+for your reading preferences and lifestyle. < /p> <
+a class = "mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline"
+href = "#" > Read more < /a> < /
+div > <
+    /div> <
+div class = "group" >
+<
+a class = "block overflow-hidden rounded-lg"
+href = "#" >
+    <
+    div class = "aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyHpYl9AVwdnql0_Mtfm_zCvAhMC6cBYVXRMJMa6WxbKZLjbUI899Zjv3juYUFU2cBsUwAfLOeUOz5GaGvCspW1DqzjYV4qoDdKGBe7DHbleoxzuKIcVYGMFxbCbRkm_rYk_yHUvyJ1bzEji60x09mtT6YTixpPXPioaSOTOXt5XWXJXk2q3lhGHQgbvUwPJMSh9PDxN5ozIWWBjeckacfASOYZunw7IHfhx8RLpT7Eps7SHfwzr_FB-WSXm4wgk-4AtM8SqVwFS4");' > < /div> < /
+a > <
+    div class = "mt-6" >
+    <
+    h3 class = "text-2xl font-medium serif leading-snug" > < a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > The Future of Digital Publishing < /a></h3 >
+    <
+    p class = "mt-3 text-gray-600 leading-relaxed" > Delve into the evolving landscape of digital publishing, exploring emerging trends and their impact on authors and readers. < /p> <
+a class = "mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline"
+href = "#" > Read more < /a> < /
+div > <
+    /div> <
+div class = "group" >
+<
+a class = "block overflow-hidden rounded-lg"
+href = "#" >
+    <
+    div class = "aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfP1o1h4g6VXRvBfOquTV6O-e1_kEii9h_Vgz7uiYLjmB-FxJqgs2VSoW5l5Qima7cLtQC052ae7Kz9op42W239F8PI4Xw6I6RcxawRifKv5Cjig0oWG5YC29fs-QBTveV8yHRwRHXpPeyi8YdZLaQjjHukZKx-y4JXL3NsrxD8zKZA9_uirpsR_Nuk-hguDCrTArP0DNskP07j5iikx3gQ2GH1W_DCL9chy-lDCywNOC_g67Rpz8dy8bSCupFwVm487LEP8mWL4k");' > < /div> < /
+a > <
+    div class = "mt-6" >
+    <
+    h3 class = "text-2xl font-medium serif leading-snug" > < a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Creating Your Ideal Reading Nook < /a></h3 >
+    <
+    p class = "mt-3 text-gray-600 leading-relaxed" > Transform any space into a cozy and inviting reading nook with our expert tips on lighting, seating, and decor. < /p> <
+a class = "mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline"
+href = "#" > Read more < /a> < /
+div > <
+    /div> <
+div class = "group" >
+<
+a class = "block overflow-hidden rounded-lg"
+href = "#" >
+    <
+    div class = "aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn_LfB1uwJkwn43Z2EIUSj0SaAZTM_jECFlSesD0uAkn3kCtrlMMILbLzd0Ph_XYea_7R4cI5-skwvNccTRN73qlLbUqysqAtNhtGktOzR-aXJXvORLpuCAS8lgX2C-o08BjKZl35N-K9i3paI5gOUAGF6cQNpStGyIaDaGBezPyA9sGvaRMlbkLyruxozA1L2pPd3X1RXanvhosLPCllBDgu-rbQkU1XA8M2swiasm32VSwGRbAoCyg3KsA0AagJ1PtDlHuu0CNg");' > < /div> < /
+a > <
+    div class = "mt-6" >
+    <
+    h3 class = "text-2xl font-medium serif leading-snug" > < a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > The Benefits of Reading Before Bed < /a></h3 >
+    <
+    p class = "mt-3 text-gray-600 leading-relaxed" > Unwind and prepare
+for a restful night 's sleep with the soothing ritual of reading. Discover the scientific benefits.</p> <
+a class = "mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline"
+href = "#" > Read more < /a> < /
+div > <
+    /div> <
+div class = "group" >
+<
+a class = "block overflow-hidden rounded-lg"
+href = "#" >
+    <
+    div class = "aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+style = 'background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA64RAAbC61jt-O5IaBFq6Bz5At0ymxFrUGWX4mEOHpc5RpQBzMV9E7j9969-ZdYSabWyO9C6dbQ_Bnc84sgtr9nQw3qIzZbm5RV4U639pI3-TCzaMEmbKc8RipaSNqFzrIfo2fgENiK4GjW0Gw7rp6XV0tuRUtXt5cAGQgjDaH32zavCaH110FnNAZqvK9fzbPCLw4Gn_byz7l5PNWCMkS1pB3nXohSUoX0HZnuvWxqYSYDrTghyHrhQlkneTR4uixMiqL3IxizPU");' > < /div> < /
+a > <
+    div class = "mt-6" >
+    <
+    h3 class = "text-2xl font-medium serif leading-snug" > < a class = "hover:text-[var(--gold-accent)] transition-colors"
+href = "#" > Discovering New Authors < /a></h3 >
+    <
+    p class = "mt-3 text-gray-600 leading-relaxed" > Step out of your comfort zone and find your next favorite author with our curated tips
+for literary exploration. < /p> <
+a class = "mt-4 inline-block font-medium text-[var(--gold-accent)] hover:underline"
+href = "#" > Read more < /a> < /
+div > <
+    /div> < /
+div > <
+    /div> < /
+main > <
+    footer class = "bg-[var(--olive-green)] text-[var(--off-white)]" >
+    <
+    div class = "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12" >
+    <
+    div class = "flex flex-col items-center justify-center" >
+    <
+    div class = "flex space-x-6 mb-4" >
+    <
+    a class = "text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" > < path d = "M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z" > < /path></svg >
+    <
+    /a> <
+a class = "text-[var(--off-white)] hover:text-[var(--gold-accent)] transition-colors"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" > < path d = "M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z" > < /path></svg >
+    <
+    /a> < /
+div > <
+    p class = "text-sm" > ©2024 VIZION.All rights reserved. < /p> < /
+div > <
+    /div> < /
+footer > <
+    /div>
 
-</body></html>
+    <
+    /body></html >
 
-<html><head>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<title>Stitch Design</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-      :root {
-        --olive-green: #596148;
-        --off-white: #f8f7f4;
+    <
+    html > < head >
+    <
+    link crossorigin = ""
+href = "https://fonts.gstatic.com/"
+rel = "preconnect" / >
+    <
+    link as = "style"
+href = "https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+onload = "this.rel='stylesheet'"
+rel = "stylesheet" / >
+    <
+    meta charset = "utf-8" / >
+    <
+    title > Stitch Design < /title> <
+link href = "data:image/x-icon;base64,"
+rel = "icon"
+type = "image/x-icon" / >
+    <
+    script src = "https://cdn.tailwindcss.com?plugins=forms,container-queries" > < /script> <
+style type = "text/tailwindcss" >
+    : root {
+        --olive - green: #596148;
+        --off-white: # f8f7f4;
         --beige: #e9e4d9;
-        --deep-black: #151711;
-        --gold-accent: #b48c47;
-      }
-      body {
-        font-family: 'Noto Sans', sans-serif;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'Newsreader', serif;
-      }
-      .nav-link {
-        @apply relative text-[var(--deep-black)] text-sm font-medium after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[var(--gold-accent)] after:transition-all after:duration-300 hover:after:w-full;
-      }
-      .btn-primary {
-        @apply flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-6 bg-[var(--deep-black)] text-[var(--off-white)] text-sm font-bold tracking-[0.015em] transition-all duration-300 hover:bg-[var(--gold-accent)] hover:text-[var(--deep-black)];
-      }
-      .form-input {
-        @apply w-full rounded-md border border-[var(--beige)] bg-[var(--off-white)] p-4 text-base text-[var(--deep-black)] placeholder:text-gray-400 focus:border-[var(--gold-accent)] focus:ring-[var(--gold-accent)];
-      }
-      .checkbox-custom {
-        @apply h-5 w-5 rounded border-[var(--beige)] bg-[var(--off-white)] text-[var(--gold-accent)] focus:ring-[var(--gold-accent)] focus:ring-offset-0;
-      }
-      .checkbox-custom:checked {
-        @apply bg-[var(--gold-accent)] border-[var(--gold-accent)];
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-      }
-    </style>
-</head>
-<body class="bg-[var(--off-white)] text-[var(--deep-black)]">
-<div class="relative flex min-h-screen flex-col overflow-x-hidden">
-<header class="sticky top-0 z-50 bg-[var(--off-white)]/80 backdrop-blur-sm transition-all duration-300">
-<div class="container mx-auto px-6 lg:px-10">
-<div class="flex h-20 items-center justify-between transition-all duration-300" id="navbar">
-<a class="flex items-center gap-2" href="#">
-<h1 class="text-3xl font-bold tracking-tighter text-[var(--deep-black)]">VIZION</h1>
-</a>
-<nav class="hidden items-center gap-9 lg:flex">
-<a class="nav-link" href="#">Home</a>
-<a class="nav-link" href="#">Boutique</a>
-<a class="nav-link" href="#">About</a>
-<a class="nav-link" href="#">Blog</a>
-<a class="nav-link text-[var(--gold-accent)] font-bold after:bg-[var(--gold-accent)]" href="#">Contact</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="transition-colors duration-300 hover:text-[var(--gold-accent)]">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-</svg>
-</button>
-<button class="transition-colors duration-300 hover:text-[var(--gold-accent)]">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path>
-</svg>
-</button>
-</div>
-</div>
-</div>
-</header>
-<main class="flex-grow">
-<div class="container mx-auto px-6 py-16 lg:px-10 lg:py-24">
-<div class="mx-auto max-w-2xl text-center">
-<h2 class="text-4xl font-bold text-[var(--deep-black)] lg:text-5xl">Get in Touch</h2>
-<p class="mt-4 text-lg text-gray-500">
-              We'd love to hear from you. Please fill out the form below, and we'll get back to you as soon as possible.
-            </p>
-</div>
-<div class="mx-auto mt-16 max-w-lg">
-<form action="#" class="space-y-8" method="POST">
-<div>
-<label class="sr-only" for="name">Name</label>
-<input class="form-input" id="name" name="name" placeholder="Name" type="text"/>
-</div>
-<div>
-<label class="sr-only" for="email">Email</label>
-<input class="form-input" id="email" name="email" placeholder="Email" type="email"/>
-</div>
-<div>
-<label class="sr-only" for="message">Message</label>
-<textarea class="form-input" id="message" name="message" placeholder="Message" rows="6"></textarea>
-</div>
-<div class="flex items-center">
-<input class="checkbox-custom" id="newsletter" name="newsletter" type="checkbox"/>
-<label class="ml-3 block text-sm text-[var(--deep-black)]" for="newsletter">Subscribe to our newsletter</label>
-</div>
-<div class="text-center">
-<button class="btn-primary" type="submit">Send Message</button>
-</div>
-</form>
-</div>
-</div>
-</main>
-<footer class="bg-[var(--olive-green)] text-[var(--off-white)]">
-<div class="container mx-auto px-6 py-8 lg:px-10">
-<div class="flex flex-col items-center justify-between sm:flex-row">
-<p class="text-sm">© 2024 VIZION. All rights reserved.</p>
-<div class="mt-4 flex space-x-6 sm:mt-0">
-<a class="transition-colors duration-300 hover:text-[var(--gold-accent)]" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
-</svg>
-</a>
-<a class="transition-colors duration-300 hover:text-[var(--gold-accent)]" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
-</svg>
-</a>
-<a class="transition-colors duration-300 hover:text-[var(--gold-accent)]" href="#">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
-</svg>
-</a>
-</div>
-</div>
-</div>
-</footer>
-</div>
-<script>
-      let lastScrollTop = 0;
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-          navbar.classList.add('h-16');
-          navbar.classList.remove('h-20');
-        } else {
-          navbar.classList.add('h-20');
-          navbar.classList.remove('h-16');
-        }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-      });
-    </script>
+        --deep - black: #151711;
+        --gold-accent: # b48c47;
+    }
+body {
+    font - family: 'Noto Sans', sans - serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font - family: 'Newsreader', serif;
+}
+.nav - link {
+        @apply relative text - [var (--deep - black)] text - sm font - medium after: absolute after: bottom - 0 after: left - 0 after: h - [1 px] after: w - 0 after: bg - [var (--gold - accent)] after: transition - all after: duration - 300 hover: after: w - full;
+    }
+    .btn - primary {
+        @apply flex min - w - [84 px] max - w - [480 px] cursor - pointer items - center justify - center overflow - hidden rounded - md h - 12 px - 6 bg - [var (--deep - black)] text - [var (--off - white)] text - sm font - bold tracking - [0.015 em] transition - all duration - 300 hover: bg - [var (--gold - accent)] hover: text - [var (--deep - black)];
+    }
+    .form - input {
+        @apply w - full rounded - md border border - [var (--beige)] bg - [var (--off - white)] p - 4 text - base text - [var (--deep - black)] placeholder: text - gray - 400 focus: border - [var (--gold - accent)] focus: ring - [var (--gold - accent)];
+    }
+    .checkbox - custom {
+        @apply h - 5 w - 5 rounded border - [var (--beige)] bg - [var (--off - white)] text - [var (--gold - accent)] focus: ring - [var (--gold - accent)] focus: ring - offset - 0;
+    }
+    .checkbox - custom: checked {
+        @apply bg - [var (--gold - accent)] border - [var (--gold - accent)];
+        background - image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    } <
+    /style> < /
+head > <
+    body class = "bg-[var(--off-white)] text-[var(--deep-black)]" >
+    <
+    div class = "relative flex min-h-screen flex-col overflow-x-hidden" >
+    <
+    header class = "sticky top-0 z-50 bg-[var(--off-white)]/80 backdrop-blur-sm transition-all duration-300" >
+    <
+    div class = "container mx-auto px-6 lg:px-10" >
+    <
+    div class = "flex h-20 items-center justify-between transition-all duration-300"
+id = "navbar" >
+    <
+    a class = "flex items-center gap-2"
+href = "#" >
+    <
+    h1 class = "text-3xl font-bold tracking-tighter text-[var(--deep-black)]" > VIZION < /h1> < /
+a > <
+    nav class = "hidden items-center gap-9 lg:flex" >
+    <
+    a class = "nav-link"
+href = "#" > Home < /a> <
+a class = "nav-link"
+href = "#" > Boutique < /a> <
+a class = "nav-link"
+href = "#" > About < /a> <
+a class = "nav-link"
+href = "#" > Blog < /a> <
+a class = "nav-link text-[var(--gold-accent)] font-bold after:bg-[var(--gold-accent)]"
+href = "#" > Contact < /a> < /
+nav > <
+    div class = "flex items-center gap-4" >
+    <
+    button class = "transition-colors duration-300 hover:text-[var(--gold-accent)]" >
+    <
+    svg fill = "currentColor"
+height = "20px"
+viewBox = "0 0 256 256"
+width = "20px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z" > < /path> < /
+svg > <
+    /button> <
+button class = "transition-colors duration-300 hover:text-[var(--gold-accent)]" >
+<
+svg fill = "currentColor"
+height = "20px"
+viewBox = "0 0 256 256"
+width = "20px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z" > < /path> < /
+svg > <
+    /button> < /
+div > <
+    /div> < /
+div > <
+    /header> <
+main class = "flex-grow" >
+<
+div class = "container mx-auto px-6 py-16 lg:px-10 lg:py-24" >
+<
+div class = "mx-auto max-w-2xl text-center" >
+<
+h2 class = "text-4xl font-bold text-[var(--deep-black)] lg:text-5xl" > Get in Touch < /h2> <
+p class = "mt-4 text-lg text-gray-500" >
+We 'd love to hear from you. Please fill out the form below, and we'
+ll get back to you as soon as possible. <
+    /p> < /
+div > <
+    div class = "mx-auto mt-16 max-w-lg" >
+    <
+    form action = "#"
+class = "space-y-8"
+method = "POST" >
+    <
+    div >
+    <
+    label class = "sr-only"
+for = "name" > Name < /label> <
+input class = "form-input"
+id = "name"
+name = "name"
+placeholder = "Name"
+type = "text" / >
+    <
+    /div> <
+div >
+    <
+    label class = "sr-only"
+for = "email" > Email < /label> <
+input class = "form-input"
+id = "email"
+name = "email"
+placeholder = "Email"
+type = "email" / >
+    <
+    /div> <
+div >
+    <
+    label class = "sr-only"
+for = "message" > Message < /label> <
+textarea class = "form-input"
+id = "message"
+name = "message"
+placeholder = "Message"
+rows = "6" > < /textarea> < /
+div > <
+    div class = "flex items-center" >
+    <
+    input class = "checkbox-custom"
+id = "newsletter"
+name = "newsletter"
+type = "checkbox" / >
+    <
+    label class = "ml-3 block text-sm text-[var(--deep-black)]"
+for = "newsletter" > Subscribe to our newsletter < /label> < /
+div > <
+    div class = "text-center" >
+    <
+    button class = "btn-primary"
+type = "submit" > Send Message < /button> < /
+div > <
+    /form> < /
+div > <
+    /div> < /
+main > <
+    footer class = "bg-[var(--olive-green)] text-[var(--off-white)]" >
+    <
+    div class = "container mx-auto px-6 py-8 lg:px-10" >
+    <
+    div class = "flex flex-col items-center justify-between sm:flex-row" >
+    <
+    p class = "text-sm" > ©2024 VIZION.All rights reserved. < /p> <
+div class = "mt-4 flex space-x-6 sm:mt-0" >
+<
+a class = "transition-colors duration-300 hover:text-[var(--gold-accent)]"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z" > < /path> < /
+svg > <
+    /a> <
+a class = "transition-colors duration-300 hover:text-[var(--gold-accent)]"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z" > < /path> < /
+svg > <
+    /a> <
+a class = "transition-colors duration-300 hover:text-[var(--gold-accent)]"
+href = "#" >
+    <
+    svg fill = "currentColor"
+height = "24px"
+viewBox = "0 0 256 256"
+width = "24px"
+xmlns = "http://www.w3.org/2000/svg" >
+    <
+    path d = "M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z" > < /path> < /
+svg > <
+    /a> < /
+div > <
+    /div> < /
+div > <
+    /footer> < /
+div > <
+    script >
+    let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add('h-16');
+        navbar.classList.remove('h-20');
+    } else {
+        navbar.classList.add('h-20');
+        navbar.classList.remove('h-16');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}); <
+/script>
 
-</body></html>
+<
+/body></html >
